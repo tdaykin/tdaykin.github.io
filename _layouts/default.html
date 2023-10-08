@@ -3,6 +3,10 @@
   <head>
     {% include meta.html %}
 
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+
     {% seo title=false %}
     {% if page.title %}
     <title>{{ page.title }}&#32;&#45;&#32;{{ site.description }}&#32;&#45;&#32;{{ site.title }}</title>
