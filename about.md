@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Trevor Daykin - 2023
+title: CV - 2023
 permalink: /about
 ---
 
