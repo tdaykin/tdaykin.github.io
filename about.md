@@ -1,12 +1,11 @@
 ---
 layout: page
-title: CV
+title: CV - 2023
 permalink: /about
 ---
 
 # Trevor Daykin
 
-**Phone:** 604-655-1972  
 **Email:** [trevorddaykin@gmail.com](mailto:trevorddaykin@gmail.com)  
 **LinkedIn:** [linkedin.com/in/trevorddaykin](https://linkedin.com/in/trevorddaykin)
 
@@ -77,9 +76,8 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 ## Publications and Conferences
 
 ### Multidisciplinary Undergraduate Research Competition (MURC)
-**March 2022**  
-**University of British Columbia**  
-**Vancouver, B.C.**
+**University of British Columbia** - Vancouver, B.C.  
+*March 2020*  
 
 - Lead a multidisciplinary team as we discovered innovations in air purification which evolved into authoring an abstract and representing our findings in a non-technical presentation
 
