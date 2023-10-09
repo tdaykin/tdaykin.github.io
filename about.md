@@ -71,7 +71,9 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 
 ### Undergraduate Research Opportunities Club
 **University of British Columbia** - Vancouver, B.C.  
-*Sep. 2021 -- Aug. 202
+*Sep. 2021 -- Aug. 2022*
+- Advanced my knowledge in research by understanding how to read/write technical documents and give presentations
+to a variety of audiences
 
 ## Publications and Conferences
 
