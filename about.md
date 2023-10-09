@@ -13,7 +13,7 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 
 ## Education:
 
-### 2nd Year UBC Engineering Physics, BASc
+### 3rd Year UBC Engineering Physics, BASc
 **University Of British Columbia** - Vancouver, B.C.  
 *Sept. 2021 -- Present*  
 - Engineering Physics is the bridge between Engineering and Science combining advanced concepts in math and physics while putting them to practical use in team-based projects
