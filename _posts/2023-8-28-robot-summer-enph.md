@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ROBOT SUMMER
-categories: [content, demo]
+categories: [ENPH, SUMMER, ROBOT]
 ---
 
 ROBOTS WERE MADE... 
