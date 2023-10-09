@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CV
-permalink: /CV
+permalink: /About
 ---
 
 Hi, this is the TMONEY
