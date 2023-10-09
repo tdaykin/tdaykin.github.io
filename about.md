@@ -1,10 +1,8 @@
 ---
 layout: page
-title: CV - 2023
+title: Trevor Daykin - 2023
 permalink: /about
 ---
-
-# Trevor Daykin
 
 **Email:** [trevorddaykin@gmail.com](mailto:trevorddaykin@gmail.com)  
 **LinkedIn:** [linkedin.com/in/trevorddaykin](https://linkedin.com/in/trevorddaykin)
