@@ -9,11 +9,11 @@ permalink: /about
 **Email:** [trevorddaykin@gmail.com](mailto:trevorddaykin@gmail.com)  
 **LinkedIn:** [linkedin.com/in/trevorddaykin](https://linkedin.com/in/trevorddaykin)
 
-## Profile
+## Profile:
 
 My goal is to be a part of the innovative technology scene. Over the recent years I have realized how valuable it is to take initiative on tasks both personal and professional as I have lived the positive impacts it has on goals. I routinely put emphasis on being accountable and meaningful which has given me the ability to lead in competitive environments.
 
-## Education
+## Education:
 
 ### 2nd Year UBC Engineering Physics, BASc
 **University Of British Columbia** - Vancouver, B.C.  
@@ -21,7 +21,7 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 - Engineering Physics is the bridge between Engineering and Science combining advanced concepts in math and physics while putting them to practical use in team-based projects
 - Key Courses: software construction, signal processing, mechanics, experimental techniques and design
 
-## Technical Experience
+## Technical Experience:
 
 ### MEA Process Engineer Co-op, Advanced Manufacturing
 **Ballard Power Systems** - Burnaby, B.C.  
@@ -31,7 +31,7 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 - Developed and implemented automated data analysis, transforming raw data into actionable insights increasing overall efficiency by 98%
 - Accelerated production times by 75% through rapid prototyping of 3D printed fixtures designed in CREO
 
-## Technical Projects
+## Technical Projects:
 
 ### Autonomous Robot Competition: 2nd Place
 **Technologies:** CAD, Machine Shop, C++  
@@ -56,13 +56,13 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 - Interpreted how ultraviolet air purifying works, specifically with \( TiO_2 \) together with multi-walled carbon nanotubes, which reduce the harmful effects of UV radiation
 - Transformed our findings into digestible content by using python and matplotlib
 
-## Technical Skills
+## Technical Skills:
 
 - **Languages:** Python, Java, C/C++, R, MATLAB, LaTeX
 - **Developer Tools:** Visual Studio, IntelliJ, Git
 - **Libraries:** pandas, NumPy, Matplotlib, scikit-learn
 
-## Community Engagement
+## Community Engagement:
 
 ### Undergraduate Research
 **Advisor: Arman Hejazi, UBC Department of Chemical and Biological Engineering** - Vancouver B.C.  
@@ -75,7 +75,7 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 - Advanced my knowledge in research by understanding how to read/write technical documents and give presentations
 to a variety of audiences
 
-## Publications and Conferences
+## Publications and Conferences:
 
 ### Multidisciplinary Undergraduate Research Competition (MURC)
 **University of British Columbia** - Vancouver, B.C.  
