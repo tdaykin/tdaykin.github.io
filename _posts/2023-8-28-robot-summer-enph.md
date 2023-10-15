@@ -40,6 +40,7 @@ details[open] summary {
   <summary>Brainstorming/Designing</summary>
   
   Brainstorming/Designing
+  ![CADGoesHard]({{ site.baseurl }}/assets/image/sumCrayCrayCAD.png)
   
 </details>
 
