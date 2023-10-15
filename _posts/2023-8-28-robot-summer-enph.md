@@ -6,6 +6,8 @@ header_image: /assets/image/tmoneyZoomZoomy.gif
 ---
 ROBOTS WERE MADE... 
 
+The rules/what is this about
+
 ![lookinSexy]({{ site.baseurl }}/assets/image/lookinSexy.png)
 
 LATE NIGHT CAD SESH:
@@ -55,4 +57,5 @@ details[open] summary {
   
 </details>
 
+Conclusion/what we learned
 UBC EngPhys Robot Summer 2023
