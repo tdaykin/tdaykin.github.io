@@ -2,14 +2,13 @@
 layout: post
 title: ROBOT SUMMER
 categories: [ENPH, SUMMER, ROBOT]
-image: /assets/image/lookinSexy.png
-image: /assets/image/lateNight.png
 ---
 ROBOTS WERE MADE... 
 
-![]({{page./assets/image/lookinSexy.png | relative_url}})
+![lookinSexy]({{ site.baseurl }}/assets/images/lookinSexy.png)
 
-LATE NIGHT CAD:
+LATE NIGHT CAD SESSIONS:
 
-![]({{page./assets/image/lateNight.png | relative_url}})
+![Probably an Industry Standard]({{ site.baseurl }}/assets/images/lateNight.png)
+
 
