@@ -7,6 +7,6 @@ ROBOTS WERE MADE...
 
 ![lookinSexy]({{ site.baseurl }}/assets/image/lookinSexy.png)
 
-LATE NIGHT CAD SESSIONS:
+LATE NIGHT CAD SESH:
 
 ![Probably an Industry Standard]({{ site.baseurl }}/assets/image/lateNight.png)
