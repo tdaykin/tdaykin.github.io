@@ -2,6 +2,7 @@
 layout: post
 title: ROBOT SUMMER
 categories: [ENPH, SUMMER, ROBOT]
+header_image: /assets/image/tmoneyZoomZoomy.gif
 ---
 ROBOTS WERE MADE... 
 
