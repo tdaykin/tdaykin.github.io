@@ -37,7 +37,21 @@ details[open] summary {
 <details>
   <summary>Brainstorming/Designing</summary>
   
-  Your content for Brainstorming/Designing goes here.
+  Brainstorming/Designing
+  
+</details>
+
+<details>
+  <summary>Construction + Redesign + Maybe a whole new idea</summary>
+  
+  Construction + Redesign + Maybe a whole new idea
+  
+</details>
+
+<details>
+  <summary>Final Build</summary>
+  
+  Final Build
   
 </details>
 
