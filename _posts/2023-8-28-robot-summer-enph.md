@@ -31,7 +31,7 @@ details[open] summary {
 }
 </style>
 
-# Your Post Content...
+# AND SO IT GOES...
 
 <details>
   <summary>Brainstorming/Designing</summary>
