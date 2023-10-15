@@ -7,9 +7,9 @@ image: /assets/image/lateNight.png
 ---
 ROBOTS WERE MADE... 
 
-![]({{page.image | relative_url}})
+![]({{page./assets/image/lookinSexy.png}})
 
 LATE NIGHT CAD:
 
-![]({{page.image | relative_url}})
+![]({{page./assets/image/lateNight.png}})
 
