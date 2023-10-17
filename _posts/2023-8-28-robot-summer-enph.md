@@ -6,6 +6,8 @@ header_image: /assets/image/tmoneyZoomZoomy.gif
 ---
 ROBOTS WERE MADE... 
 
+<!--more-->
+
 The rules/what is this about
 
 ![lookinSexy]({{ site.baseurl }}/assets/image/lookinSexy.png)
