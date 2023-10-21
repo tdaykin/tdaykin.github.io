@@ -9,6 +9,8 @@ layout: default
         text-align: center;
         background-color: white; /* Ensures the header has a solid background */
         color: black; /* Text color in the header */
+        z-index: 2; /* Above the black rectangle */
+        position: relative; /* Required for z-index to take effect */
     }
 
     /* Background and overlay */
@@ -33,12 +35,14 @@ layout: default
         right: 0;
         bottom: 0; 
         background-color: rgba(0, 0, 0, 0.33); /* Black with 33% transparency */
-        z-index: 0; /* Positioned below the content */
+        z-index: 0; /* Positioned below the content and navigation */
     }
 
     /* Resetting the navigation bar font color */
     nav, nav a, nav a:visited {
         color: black; /* Set this to the original color of your navigation bar */
+        z-index: 3; /* Above the black rectangle */
+        position: relative; /* Required for z-index to take effect */
     }
 
     /* Posts content container */
@@ -47,7 +51,7 @@ layout: default
         height: auto; /* Adjusts height based on content */
         overflow-y: auto;
         position: relative;
-        z-index: 1; /* Ensure posts content is above the black rectangle */
+        z-index: 1; /* Ensure posts content is above the black rectangle but below the navigation */
     }
 
     a, a:visited {
@@ -56,7 +60,7 @@ layout: default
 
     .post {
         position: relative;
-        z-index: 2; /* Above the black rectangle */
+        z-index: 2; /* Above the black rectangle but below the navigation */
         /* Adjust the max-width and margin properties as needed to style the post content */
         max-width: 800px; /* Example width; adjust as needed */
         margin: 0 auto; /* Centers the content horizontally */
