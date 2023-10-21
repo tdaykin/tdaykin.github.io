@@ -3,26 +3,35 @@ layout: default
 ---
 
 <style>
+    /* Header styling */
+    .site-header {
+        padding: 20px 0; /* Adjust padding as needed */
+        text-align: center;
+        background-color: white; /* Ensures the header has a solid background */
+        color: black; /* Text color in the header */
+    }
+
+    /* Background and overlay */
     body {
         margin: 0;
         padding: 0;
         height: 100vh;
         color: white; /* All text in white */
-        background-image: url('/assets/image/tmoneyZoomZoomy.gif'); /* Replace with your image path */
+        position: relative; /* Required to position the pseudo-element relative to the body */
+        background-image: url('/assets/image/tmoneyZoomZoomy.gif');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center;
-        position: relative; /* Required to position the pseudo-element relative to the body */
+        background-position: center; /* Center the background image */
     }
 
     /* Black transparent rectangle */
     body::before {
         content: "";
         position: absolute;
-        top: 0;
+        top: 0; 
         left: 0;
         right: 0;
-        bottom: 0; /* Covering the entire body */
+        bottom: 0; 
         background-color: rgba(0, 0, 0, 0.33); /* Black with 33% transparency */
         z-index: 0; /* Positioned below the content */
     }
@@ -30,16 +39,14 @@ layout: default
     /* Resetting the navigation bar font color */
     nav, nav a, nav a:visited {
         color: black; /* Set this to the original color of your navigation bar */
-        z-index: 2; /* Above the black rectangle */
     }
 
     /* Posts content container */
     .posts {
         width: 100%; /* Full width of the parent container */
-        height: calc(100vh - 60px); /* Deducting estimated nav height; adjust if needed */
+        height: auto; /* Adjusts height based on content */
         overflow-y: auto;
         position: relative;
-        margin-top: 60px; /* Estimated nav height; adjust if needed */
         z-index: 1; /* Ensure posts content is above the black rectangle */
     }
 
@@ -57,6 +64,13 @@ layout: default
 
 </style>
 
+<!-- Site Header -->
+<div class="site-header">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+</div>
+
+<!-- Posts Section (this will be your existing code) -->
 <div class="posts">
     {% for post in paginator.posts %}
     <article class="post">
