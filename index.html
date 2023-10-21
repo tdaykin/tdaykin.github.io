@@ -22,7 +22,7 @@ layout: default
         top: 0;
         left: 0;
         right: 0;
-        bottom: 60px; /* Height of your navigation bar, adjust if needed */
+        bottom: 0; /* Covering the entire body */
         background-color: rgba(0, 0, 0, 0.33); /* Black with 33% transparency */
         z-index: 0; /* Positioned below the content */
     }
@@ -30,6 +30,7 @@ layout: default
     /* Resetting the navigation bar font color */
     nav, nav a, nav a:visited {
         color: black; /* Set this to the original color of your navigation bar */
+        z-index: 2; /* Above the black rectangle */
     }
 
     /* Posts content container */
