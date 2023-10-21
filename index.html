@@ -10,19 +10,16 @@ layout: default
         color: white; /* All text in white */
     }
 
-    /* Black 25% transparent rectangle and background image applied to .posts */
+    /* Black 25% transparent rectangle applied to .posts */
     .posts {
-        width: 100vw; /* Full viewport width */
+        width: 100%; /* Set width to 100% of the parent container */
         height: 100vh;
         overflow-y: auto;
         position: relative;
-        background-image: url('/assets/image/tmoneyZoomZoomy.gif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-attachment: fixed;
+        background-color: rgba(0, 0, 0, 0.25); /* Transparent black background */
     }
 
+    /* Background image applied directly to .posts */
     .posts::before {
         content: "";
         position: absolute;
@@ -30,8 +27,11 @@ layout: default
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.25);
-        z-index: -1; /* Behind the posts content */
+        background-image: url('/assets/image/tmoneyZoomZoomy.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        z-index: -1; /* Positioned below the content but above the transparent black background */
     }
 
     a, a:visited {
@@ -40,7 +40,7 @@ layout: default
 
     .post {
         position: relative;
-        z-index: 1; /* Above the black rectangle */
+        z-index: 1; /* Above the background image */
     }
 </style>
 
