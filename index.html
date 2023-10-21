@@ -8,6 +8,23 @@ layout: default
         padding: 0;
         height: 100vh;
         color: white; /* All text in white */
+        background-image: url('/assets/image/tmoneyZoomZoomy.gif'); /* Replace with your image path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative; /* Required to position the pseudo-element relative to the body */
+    }
+
+    /* Black transparent rectangle */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 60px; /* Height of your navigation bar, adjust if needed */
+        background-color: rgba(0, 0, 0, 0.33); /* Black with 33% transparency */
+        z-index: 0; /* Positioned below the content */
     }
 
     /* Resetting the navigation bar font color */
@@ -15,17 +32,14 @@ layout: default
         color: black; /* Set this to the original color of your navigation bar */
     }
 
-    /* Posts content container with background */
+    /* Posts content container */
     .posts {
         width: 100%; /* Full width of the parent container */
         height: calc(100vh - 60px); /* Deducting estimated nav height; adjust if needed */
         overflow-y: auto;
         position: relative;
         margin-top: 60px; /* Estimated nav height; adjust if needed */
-        background-image: url('/assets/image/tmoneyZoomZoomy.gif'); /* Replace with your image path */
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center top;
+        z-index: 1; /* Ensure posts content is above the black rectangle */
     }
 
     a, a:visited {
@@ -34,7 +48,7 @@ layout: default
 
     .post {
         position: relative;
-        z-index: 1;
+        z-index: 2; /* Above the black rectangle */
         /* Adjust the max-width and margin properties as needed to style the post content */
         max-width: 800px; /* Example width; adjust as needed */
         margin: 0 auto; /* Centers the content horizontally */
