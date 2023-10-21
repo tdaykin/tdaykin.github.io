@@ -15,32 +15,35 @@ layout: default
         color: black; /* Set this to the original color of your navigation bar */
     }
 
-    /* Full screen background and overlay */
-    .background-container {
+    /* Posts content container with background and overlay */
+    .posts {
         width: 100vw; /* Full viewport width */
-        height: 100vh;
+        height: calc(100vh - 60px); /* Deducting estimated nav height; adjust if needed */
+        overflow-y: auto;
         position: relative;
         background-image: url('/assets/image/tmoneyZoomZoomy.gif');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center center;
+        margin-top: 60px; /* Estimated nav height; adjust if needed */
     }
 
-    .background-container::before {
+    .posts::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.25); /* Transparent black background */
+        background-color: rgba(0, 0, 0, 0.25); /* Transparent black overlay */
         z-index: 0; /* Positioned below the content */
     }
 
-    /* Posts content */
-    .posts {
-        height: 100vh;
-        overflow-y: auto;
+    a, a:visited {
+        color: white;
+    }
+
+    .post {
         position: relative;
         z-index: 1; /* Above the background and overlay */
         /* Adjust the max-width and margin properties as needed to style the post content */
@@ -48,35 +51,21 @@ layout: default
         margin: 0 auto; /* Centers the content horizontally */
     }
 
-    a, a:visited {
-        color: white;
-    }
-
 </style>
 
-<div class="background-container">
-    <div class="posts">
-      {% for post in paginator.posts %}
-      <article class="post">
-
+<div class="posts">
+    {% for post in paginator.posts %}
+    <article class="post">
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
         <div class="entry">
-          {% if post.content contains '<!--more-->' %}
-
-          {{ post.excerpt }}
-
-          {% else %}
-
-          {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
-
-          {% endif %}
+            {% if post.content contains '<!--more-->' %}
+                {{ post.excerpt }}
+            {% else %}
+                {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+            {% endif %}
         </div>
-
         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read more&nbsp;&#183;{% include read-time.html content=post.content %}</a>
-      </article>
-      {% endfor %}
-
-      {% include pagination.html %}
-    </div>
+    </article>
+    {% endfor %}
+    {% include pagination.html %}
 </div>
