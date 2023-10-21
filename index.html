@@ -12,11 +12,35 @@ layout: default
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
-        color: white;
+        color: white; /* All text in white */
+    }
+
+    /* White rectangle at the top */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px; /* Adjust this value based on the height of your navigation */
+        background-color: white;
+        z-index: 0; /* Behind the content but above the black overlay */
+    }
+
+    /* Black 25% transparent rectangle covering the entire viewport */
+    body::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.25);
+        z-index: -1; /* Behind everything */
     }
 
     a:visited {
-        color: white; /* Ensure visited links remain white */
+        color: white;
     }
 
     .posts {
@@ -25,20 +49,9 @@ layout: default
         position: relative;
     }
 
-    .posts::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.25);
-        z-index: 0;
-    }
-
     .post {
         position: relative;
-        z-index: 1;
+        z-index: 2; /* Above the white and black rectangles */
     }
 </style>
 
