@@ -2,7 +2,25 @@
 layout: default
 ---
 
-<div class="posts" style="background-image: url('/assets/image/tmoneyZoomZoomy.gif'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-image: url('/assets/image/tmoneyZoomZoomy.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .posts {
+        height: 100vh;
+        overflow-y: auto; /* Allow scrolling within the posts div */
+    }
+</style>
+
+<div class="posts">
   {% for post in paginator.posts %}
   <article class="post">
 
@@ -26,4 +44,5 @@ layout: default
 
   {% include pagination.html %}
 </div>
+
 
