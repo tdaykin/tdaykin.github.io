@@ -26,6 +26,9 @@ layout: default
         background-repeat: no-repeat;
         background-position: center center;
         margin-top: 60px; /* Estimated nav height; adjust if needed */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the posts horizontally */
     }
 
     .posts::before {
@@ -48,7 +51,8 @@ layout: default
         z-index: 1; /* Above the background and overlay */
         /* Adjust the max-width and margin properties as needed to style the post content */
         max-width: 800px; /* Example width; adjust as needed */
-        margin: 0 auto; /* Centers the content horizontally */
+        width: 100%; /* Take full width of the container */
+        box-sizing: border-box; /* Include padding and borders in the width calculation */
     }
 
 </style>
