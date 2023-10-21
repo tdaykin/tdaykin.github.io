@@ -7,51 +7,39 @@ layout: default
         margin: 0;
         padding: 0;
         height: 100vh;
-        background-image: url('/assets/image/tmoneyZoomZoomy.gif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
         color: white; /* All text in white */
     }
 
-    /* White rectangle at the top */
-    body::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 60px; /* Adjust this value based on the height of your navigation */
-        background-color: white;
-        z-index: 0; /* Behind the content but above the black overlay */
+    /* Black 25% transparent rectangle and background image applied to .posts */
+    .posts {
+        height: 100vh;
+        overflow-y: auto;
+        position: relative;
+        background-image: url('/assets/image/tmoneyZoomZoomy.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
     }
 
-    /* Black 25% transparent rectangle covering the entire viewport */
-    body::after {
+    .posts::before {
         content: "";
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.25);
-        z-index: -1; /* Behind everything */
+        background: rgba(0, 0, 0, 0.33);
+        z-index: -1; /* Behind the posts content */
     }
 
-    a:visited {
+    a, a:visited {
         color: white;
-    }
-
-    .posts {
-        height: 100vh;
-        overflow-y: auto;
-        position: relative;
     }
 
     .post {
         position: relative;
-        z-index: 2; /* Above the white and black rectangles */
+        z-index: 1; /* Above the black rectangle */
     }
 </style>
 
