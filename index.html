@@ -8,10 +8,6 @@ layout: default
         padding: 0;
         height: 100vh;
         color: white; /* All text in white */
-        background-image: url('/assets/image/tmoneyZoomZoomy.gif'); /* Replace with your image path */
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
     }
 
     /* Resetting the navigation bar font color */
@@ -19,13 +15,17 @@ layout: default
         color: black; /* Set this to the original color of your navigation bar */
     }
 
-    /* Posts content container */
+    /* Posts content container with background */
     .posts {
         width: 100%; /* Full width of the parent container */
         height: calc(100vh - 60px); /* Deducting estimated nav height; adjust if needed */
         overflow-y: auto;
         position: relative;
         margin-top: 60px; /* Estimated nav height; adjust if needed */
+        background-image: url('/assets/image/tmoneyZoomZoomy.gif'); /* Replace with your image path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
     }
 
     a, a:visited {
