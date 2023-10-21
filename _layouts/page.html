@@ -2,11 +2,19 @@
 layout: default
 ---
 
+<style>
+    body {
+        background-image: url('/assets/image/tmoneyZoomZoomy.gif');
+        background-size: cover;  /* to cover the entire viewport */
+        background-repeat: no-repeat;  /* to prevent the image from repeating */
+        background-position: center center;  /* to center the image */
+    }
+</style>
+
 <article class="page">
-
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
+    <h1>{{ page.title }}</h1>
+    <div class="entry">
+        {{ content }}
+    </div>
 </article>
+
