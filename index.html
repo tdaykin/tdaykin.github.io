@@ -14,6 +14,13 @@ layout: default
         background-attachment: fixed;
     }
 
+    nav, .navbar, .navigation { /* This targets the navigation, adjust as necessary */
+        background-color: white;
+        width: 100%;
+        z-index: 1000; /* Ensures the navigation stays on top */
+        position: relative; /* Needed for z-index to take effect */
+    }
+
     .posts {
         height: 100vh;
         overflow-y: auto; /* Allow scrolling within the posts div */
@@ -44,5 +51,3 @@ layout: default
 
   {% include pagination.html %}
 </div>
-
-
