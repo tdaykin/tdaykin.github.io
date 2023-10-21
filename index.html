@@ -12,11 +12,26 @@ layout: default
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
+        color: white; /* Making all text white */
+    }
+
+    /* Creating a black 25% transparent rectangle */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.25); /* Black with 25% transparency */
+        z-index: 0;
     }
 
     .posts {
         height: 100vh;
         overflow-y: auto; /* Allow scrolling within the posts div */
+        position: relative; /* To ensure it stays above the black rectangle */
+        z-index: 1; /* To ensure it stays above the black rectangle */
     }
 </style>
 
