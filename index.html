@@ -3,6 +3,14 @@ layout: default
 ---
 
 <style>
+    /* Reset body margin and padding */
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        color: white;
+    }
+
     /* Header styling */
     .site-header {
         padding: 20px 0; /* Adjust padding as needed */
@@ -13,17 +21,9 @@ layout: default
         position: relative; /* Required for z-index to take effect */
     }
 
-    /* Resetting the body styling */
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        color: white;
-    }
-
     /* Posts content container with the background and overlay */
     .posts {
-        width: 100%; /* Full width of the parent container */
+        width: 100vw; /* Full width of the viewport */
         height: auto; /* Adjusts height based on content */
         overflow-y: auto;
         position: relative;
