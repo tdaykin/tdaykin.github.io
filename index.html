@@ -9,6 +9,7 @@ layout: default
         padding: 0;
         height: 100vh;
         color: white;
+        background-color: white; /* Set the overall background color to white */
     }
 
     /* Header styling */
@@ -23,7 +24,7 @@ layout: default
     /* New Background Section */
     .background-section {
         position: absolute;
-        top: 0;
+        top: calc(100vh - 60px); /* Estimated height of the header and description; adjust as needed */
         left: 0;
         right: 0;
         bottom: 0;
@@ -31,7 +32,7 @@ layout: default
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        z-index: 1; /* Positioned below the content and navigation */
+        z-index: 1; /* Positioned below the content but above the body's white background */
     }
 
     /* Black transparent rectangle inside the background section */
