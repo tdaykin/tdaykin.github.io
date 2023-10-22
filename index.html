@@ -7,7 +7,7 @@ layout: default
     body {
         margin: 0;
         padding: 0;
-        height: 100vh;
+        height: auto;
         color: white;
         background-color: white; /* Set the overall background color to white */
     }
@@ -32,10 +32,10 @@ layout: default
     /* New Background Section */
     .background-section {
         position: absolute;
-        top: 105px;
+        top: var(--combined-height);
         left: 0;
         right: 0;
-        bottom: 0vh;
+        bottom: 0;
         background-image: url('/assets/image/tmoneyZoomZoomy.gif');
         background-size: cover;
         background-repeat: no-repeat;
