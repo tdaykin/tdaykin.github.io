@@ -18,7 +18,8 @@ layout: default
         text-align: center;
         background-color: white; /* Ensures the header has a solid background */
         color: black; /* Text color in the header */
-        z-index: 3; /* Above the black rectangle and the background section */
+        z-index: 5; /* Above everything else */
+        position: relative;
     }
 
     /* New Background Section */
@@ -49,14 +50,15 @@ layout: default
     /* Resetting the navigation bar font color to black */
     nav, nav a, nav a:visited {
         color: black;
-        z-index: 4; /* Above everything else */
+        z-index: 4; /* Above the posts and background, but below header */
+        position: relative;
     }
 
     /* Posts content container */
     .posts {
         width: 100%; /* Full width of the parent container */
         position: relative;
-        z-index: 2; /* Above the background section but below the navigation */
+        z-index: 3; /* Above the background section but below the navigation and header */
     }
 
     a, a:visited {
