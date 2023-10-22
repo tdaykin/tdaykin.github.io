@@ -9,6 +9,8 @@ layout: default
         padding: 0;
         height: 100vh;
         color: white;
+        display: flex; /* Flexbox layout */
+        flex-direction: column; /* Vertical layout */
     }
 
     /* Header styling */
@@ -18,13 +20,11 @@ layout: default
         background-color: white; /* Ensures the header has a solid background */
         color: black; /* Text color in the header */
         z-index: 2; /* Above the black rectangle */
-        position: relative; /* Required for z-index to take effect */
     }
 
     /* Posts content container with the background and overlay */
     .posts {
-        width: 100vw; /* Full width of the viewport */
-        height: auto; /* Adjusts height based on content */
+        flex: 1; /* Take up remaining space */
         overflow-y: auto;
         position: relative;
         z-index: 1; /* Ensure posts content is above the black rectangle but below the navigation */
@@ -50,7 +50,6 @@ layout: default
     nav, nav a, nav a:visited {
         color: black;
         z-index: 3; /* Above the black rectangle */
-        position: relative; /* Required for z-index to take effect */
     }
 
     a, a:visited {
@@ -62,7 +61,7 @@ layout: default
         z-index: 2; /* Above the black rectangle but below the navigation */
         /* Adjust the max-width and margin properties as needed to style the post content */
         max-width: 800px; /* Example width; adjust as needed */
-        margin: 0 auto; /* Centers the content horizontally */
+        margin: 20px auto; /* Centers the content horizontally and provides some spacing */
     }
 
 </style>
