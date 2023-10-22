@@ -8,15 +8,16 @@ layout: default
         padding: 20px 0; /* Adjust padding as needed */
         text-align: center;
         background-color: white; /* Ensures the header has a solid background */
-        color: black; /* Text color in the header */
+        color: white; /* Text color in the header changed to white */
         z-index: 2; /* Above the black rectangle */
         position: relative; /* Required for z-index to take effect */
     }
-    
-    .site-footer, .site-footer a, .site-footer a:visited {
-        z-index: 4; /* Above the posts, navigation, and black rectangle */
-        position: relative; /* Required for z-index to take effect */
-        color: black; /* Set the footer text and icons to black */
+
+    /* White top section */
+    .white-top {
+        background-color: white;
+        height: 100px; /* Adjust as needed */
+        width: 100%;
     }
 
     /* Background and overlay */
@@ -40,13 +41,13 @@ layout: default
         left: 0;
         right: 0;
         bottom: 0; 
-        background-color: rgba(0, 0, 0, 0.45); /* Black with 33% transparency */
+        background-color: rgba(0, 0, 0, 0.33); /* Black with 33% transparency */
         z-index: 0; /* Positioned below the content and navigation */
     }
 
     /* Resetting the navigation bar font color */
     nav, nav a, nav a:visited {
-        color: black; /* Set this to the original color of your navigation bar */
+        color: white; /* Set navigation links to white */
         z-index: 3; /* Above the black rectangle */
         position: relative; /* Required for z-index to take effect */
     }
@@ -74,7 +75,10 @@ layout: default
 
 </style>
 
-<!-- Posts Section (this will be your existing code) -->
+<!-- White Top Section -->
+<div class="white-top"></div>
+
+<!-- Posts Section -->
 <div class="posts">
     {% for post in paginator.posts %}
     <article class="post">
