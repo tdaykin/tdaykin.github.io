@@ -22,20 +22,19 @@ layout: default
         z-index: 2; /* Above the black rectangle */
     }
 
-    /* Posts content container with the background and overlay */
-    .posts {
+    /* New Background Section */
+    .background-section {
         flex: 1; /* Take up remaining space */
-        overflow-y: auto;
         position: relative;
-        z-index: 1; /* Ensure posts content is above the black rectangle but below the navigation */
         background-image: url('/assets/image/tmoneyZoomZoomy.gif');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center; /* Center the background image */
+        background-position: center;
+        z-index: 0; /* Positioned below the content and navigation */
     }
 
-    /* Black transparent rectangle inside the posts section */
-    .posts::before {
+    /* Black transparent rectangle inside the background section */
+    .background-section::before {
         content: "";
         position: absolute;
         top: 0; 
@@ -43,7 +42,6 @@ layout: default
         right: 0;
         bottom: 0; 
         background-color: rgba(0, 0, 0, 0.33); /* Black with 33% transparency */
-        z-index: 0; /* Positioned below the content and navigation */
     }
 
     /* Resetting the navigation bar font color to black */
@@ -52,19 +50,29 @@ layout: default
         z-index: 3; /* Above the black rectangle */
     }
 
+    /* Posts content container */
+    .posts {
+        width: 100%; /* Full width of the parent container */
+        position: relative;
+        z-index: 1; /* Ensure posts content is above the background section but below the navigation */
+    }
+
     a, a:visited {
         color: white;
     }
 
     .post {
         position: relative;
-        z-index: 2; /* Above the black rectangle but below the navigation */
+        z-index: 2; /* Above the background section but below the navigation */
         /* Adjust the max-width and margin properties as needed to style the post content */
         max-width: 800px; /* Example width; adjust as needed */
         margin: 20px auto; /* Centers the content horizontally and provides some spacing */
     }
 
 </style>
+
+<!-- New Background Section -->
+<div class="background-section"></div>
 
 <!-- Posts Section -->
 <div class="posts">
