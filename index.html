@@ -13,6 +13,13 @@ layout: default
         position: relative; /* Required for z-index to take effect */
     }
 
+    /* White top section */
+    .white-top {
+        background-color: white;
+        height: 100px; /* Adjust as needed */
+        width: 100%;
+    }
+
     /* Background and overlay */
     body {
         margin: 0;
@@ -45,6 +52,12 @@ layout: default
         position: relative; /* Required for z-index to take effect */
     }
 
+    /* Make copyright and GitHub icon clickable */
+    .site-footer, .site-footer a, .site-footer a:visited {
+        z-index: 4; /* Positioned above everything else */
+        position: relative; /* Required for z-index to take effect */
+    }
+
     /* Posts content container */
     .posts {
         width: 100%; /* Full width of the parent container */
@@ -67,6 +80,9 @@ layout: default
     }
 
 </style>
+
+<!-- White Top Section -->
+<div class="white-top"></div>
 
 <!-- Posts Section -->
 <div class="posts">
