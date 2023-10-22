@@ -9,7 +9,7 @@ layout: default
         text-align: center;
         background-color: white; /* Ensures the header has a solid background */
         color: black; /* Text color in the header */
-        z-index: 2; /* Above the black rectangle */
+        z-index: 3; /* Above the black rectangle and white background */
         position: relative; /* Required for z-index to take effect */
     }
 
@@ -19,11 +19,23 @@ layout: default
         padding: 0;
         height: 100vh;
         color: white; /* All text in white */
-        position: relative; /* Required to position the pseudo-element relative to the body */
+        position: relative; /* Required to position the pseudo-elements relative to the body */
         background-image: url('/assets/image/tmoneyZoomZoomy.gif');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center; /* Center the background image */
+    }
+
+    /* White background */
+    body::after {
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        background-color: white;
+        z-index: -1; /* Positioned at the very bottom */
     }
 
     /* Black transparent rectangle */
@@ -34,14 +46,14 @@ layout: default
         left: 0;
         right: 0;
         bottom: 0; 
-        background-color: rgba(0, 0, 0, 0.45); /* Black with 33% transparency */
-        z-index: 0; /* Positioned below the content and navigation */
+        background-color: rgba(0, 0, 0, 0.45); /* Black with 45% transparency */
+        z-index: 0; /* Positioned below the content and navigation but above the white background */
     }
 
     /* Resetting the navigation bar font color */
     nav, nav a, nav a:visited {
         color: black; /* Set this to the original color of your navigation bar */
-        z-index: 3; /* Above the black rectangle */
+        z-index: 3; /* Above the black rectangle and white background */
         position: relative; /* Required for z-index to take effect */
     }
 
@@ -51,7 +63,7 @@ layout: default
         height: auto; /* Adjusts height based on content */
         overflow-y: auto;
         position: relative;
-        z-index: 1; /* Ensure posts content is above the black rectangle but below the navigation */
+        z-index: 2; /* Ensure posts content is above the black rectangle and white background */
     }
 
     a, a:visited {
@@ -60,7 +72,7 @@ layout: default
 
     .post {
         position: relative;
-        z-index: 2; /* Above the black rectangle but below the navigation */
+        z-index: 2; /* Above the black rectangle and white background */
         /* Adjust the max-width and margin properties as needed to style the post content */
         max-width: 800px; /* Example width; adjust as needed */
         margin: 0 auto; /* Centers the content horizontally */
