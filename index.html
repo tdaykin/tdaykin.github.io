@@ -13,13 +13,6 @@ layout: default
         position: relative; /* Required for z-index to take effect */
     }
 
-    /* White top section */
-    .white-top {
-        background-color: white;
-        height: 100px; /* Adjust as needed */
-        width: 100%;
-    }
-
     /* Background and overlay */
     body {
         margin: 0;
@@ -41,7 +34,7 @@ layout: default
         left: 0;
         right: 0;
         bottom: 0; 
-        background-color: rgba(0, 0, 0, 0.33); /* Black with 33% transparency */
+        background-color: rgba(0, 0, 0, 0.45); /* Black with 33% transparency */
         z-index: 0; /* Positioned below the content and navigation */
     }
 
@@ -75,10 +68,7 @@ layout: default
 
 </style>
 
-<!-- White Top Section -->
-<div class="white-top"></div>
-
-<!-- Posts Section -->
+<!-- Posts Section (this will be your existing code) -->
 <div class="posts">
     {% for post in paginator.posts %}
     <article class="post">
@@ -95,6 +85,3 @@ layout: default
     {% endfor %}
     {% include pagination.html %}
 </div>
-
-<!-- Placeholder for White Footer Section (You can add content here later if needed) -->
-<!--<div class="white-footer"></div>-->
