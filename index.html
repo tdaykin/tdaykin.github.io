@@ -8,30 +8,34 @@ layout: default
         padding: 20px 0; /* Adjust padding as needed */
         text-align: center;
         background-color: white; /* Ensures the header has a solid background */
-        color: white; /* Text color in the header changed to white */
+        color: black; /* Text color in the header */
         z-index: 2; /* Above the black rectangle */
         position: relative; /* Required for z-index to take effect */
     }
 
-    .site-title, .site-description {
-        color: white;
-    }
-
-    /* Background and overlay */
+    /* Resetting the body styling */
     body {
         margin: 0;
         padding: 0;
         height: 100vh;
-        color: white; /* All text in white */
-        position: relative; /* Required to position the pseudo-element relative to the body */
+        color: white;
+    }
+
+    /* Posts content container with the background and overlay */
+    .posts {
+        width: 100%; /* Full width of the parent container */
+        height: auto; /* Adjusts height based on content */
+        overflow-y: auto;
+        position: relative;
+        z-index: 1; /* Ensure posts content is above the black rectangle but below the navigation */
         background-image: url('/assets/image/tmoneyZoomZoomy.gif');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center; /* Center the background image */
     }
 
-    /* Black transparent rectangle */
-    body::before {
+    /* Black transparent rectangle inside the posts section */
+    .posts::before {
         content: "";
         position: absolute;
         top: 0; 
@@ -42,26 +46,11 @@ layout: default
         z-index: 0; /* Positioned below the content and navigation */
     }
 
-    /* Resetting the navigation bar font color */
+    /* Resetting the navigation bar font color to black */
     nav, nav a, nav a:visited {
-        color: white; /* Set navigation links to white */
+        color: black;
         z-index: 3; /* Above the black rectangle */
         position: relative; /* Required for z-index to take effect */
-    }
-
-    /* Make copyright and GitHub icon clickable */
-    .site-footer, .site-footer a, .site-footer a:visited {
-        z-index: 4; /* Positioned above everything else */
-        position: relative; /* Required for z-index to take effect */
-    }
-
-    /* Posts content container */
-    .posts {
-        width: 100%; /* Full width of the parent container */
-        height: auto; /* Adjusts height based on content */
-        overflow-y: auto;
-        position: relative;
-        z-index: 1; /* Ensure posts content is above the black rectangle but below the navigation */
     }
 
     a, a:visited {
