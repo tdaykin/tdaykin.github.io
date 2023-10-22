@@ -1,97 +1,117 @@
----
-layout: default
----
+#
+# This file contains configuration flags to customize your site
+#
 
-<style>
-    /* Header styling */
-    .site-header {
-        padding: 20px 0; /* Adjust padding as needed */
-        text-align: center;
-        background-color: white; /* Ensures the header has a solid background */
-        color: white; /* Text color in the header */
-        z-index: 2; /* Above the black rectangle */
-        position: relative; /* Required for z-index to take effect */
-    }
+# Site locale
+lang: "en"
 
-    /* White top section */
-    .white-top {
-        background-color: white;
-        height: 100px; /* Adjust as needed */
-        width: 100%;
-    }
+# Name of your site (displayed in the header)
+title: TREVOR DAYKIN
 
-    /* Background and overlay */
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        color: white; /* All text in white */
-        position: relative; /* Required to position the pseudo-element relative to the body */
-        background-image: url('/assets/image/tmoneyZoomZoomy.gif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; /* Center the background image */
-    }
+# Short bio or description (displayed in the header)
+description: COLLECTION OF WORK
 
-    /* Black transparent rectangle */
-    body::before {
-        content: "";
-        position: absolute;
-        top: 0; 
-        left: 0;
-        right: 0;
-        bottom: 0; 
-        background-color: rgba(0, 0, 0, 0.33); /* Black with 33% transparency */
-        z-index: 0; /* Positioned below the content and navigation */
-    }
+# URL of your avatar or profile pic (you could use your GitHub profile pic) commenting thsi out leaves a box around pic
+avatar: /assets/image/avatar.png #avatar.png (normally)
 
-    /* Navigation links, title, and description */
-    nav, nav a, nav a:visited, .site-title, .site-description {
-        color: white; 
-        z-index: 3; /* Above the black rectangle */
-        position: relative; /* Required for z-index to take effect */
-    }
+#
+# Flags below are optional
+#
 
-    /* Posts content container */
-    .posts {
-        width: 100%; /* Full width of the parent container */
-        height: auto; /* Adjusts height based on content */
-        overflow-y: auto;
-        position: relative;
-        z-index: 1; /* Ensure posts content is above the black rectangle but below the navigation */
-    }
+# Your website URL (e.g. https://forever-jekyll.github.io or https://forever-jekyll.com)
+# Used for Sitemap.xml and your RSS feed
+url: https://tdaykin.github.io
 
-    a, a:visited {
-        color: white;
-    }
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
 
-    .post {
-        position: relative;
-        z-index: 2; /* Above the black rectangle but below the navigation */
-        /* Adjust the max-width and margin properties as needed to style the post content */
-        max-width: 800px; /* Example width; adjust as needed */
-        margin: 0 auto; /* Centers the content horizontally */
-    }
+# Navigation menu
+navigation_links:
+  - title: Activities
+    url: /
 
-</style>
+  - title: CV
+    url: /about
 
-<!-- White Top Section -->
-<div class="white-top"></div>
+  - title: Search
+    url: /search
 
-<!-- Posts Section -->
-<div class="posts">
-    {% for post in paginator.posts %}
-    <article class="post">
-        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-        <div class="entry">
-            {% if post.content contains '<!--more-->' %}
-                {{ post.excerpt }}
-            {% else %}
-                {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
-            {% endif %}
-        </div>
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read more&nbsp;&#183;{% include read-time.html content=post.content %}</a>
-    </article>
-    {% endfor %}
-    {% include pagination.html %}
-</div>
+# Footer icons
+footer_links:
+  #- title: Feed
+  # url: feed.xml
+  #icon: fa fa-rss-square
+
+  #- title: Twitter
+  #  url: https://twitter.com/jekyllrb
+  #  icon: fa fa-twitter-square
+
+  - title: GitHub
+    url: https://github.com/tdaykin
+    icon: fa fa-github-square
+
+# Enter your copyright text if you wish to override the default one.
+#copyright: "This site is made with <3 by *me, myself, and I*."
+
+# Time zone
+timezone: Canada/Yukon
+
+# Excerpt separator
+excerpt_separator: <!--more-->
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+permalink: pretty
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Pagination
+paginate: 5
+paginate_path: "/page/:num/"
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _sass
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji
+  - webrick
+  - jekyll-github-metadata
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+# Robots are welcome
+include:
+  - robots.txt
+
+# Excerpt separator
+excerpt_separator: <!--more-->
+
+#Google Analytics
+google_analytics: G-6T1MXEH5CT
