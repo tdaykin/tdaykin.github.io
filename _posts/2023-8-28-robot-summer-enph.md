@@ -15,6 +15,8 @@ ROBOTS WERE MADE...
 - Soldering, Electronics and PCB Design
 - Troubleshooting (noise issues, signal integrity, software and hardware)
 
+**Pictures:**
+
 ![lookinSexy]({{ site.baseurl }}/assets/image/lookinSexy.png)
 
 **Some History and Outline:**
@@ -26,7 +28,7 @@ The full race can be watched [here](https://www.youtube.com/live/gXMnazr8vEo?si=
 The rules and course webpage can be found [here](https://docs.google.com/document/d/e/2PACX-1vS4bQXNVCvEt-UMX50Rsar0Wds5AqRDQToN8ABxkS7ocnluPU8JlCNRYIkiXptbHYsrAI_WKzwC9IwO/pub).
 
 
-LATE NIGHT CAD SESH:
+**Late Night CAD Session**:
 
 ![Probably an Industry Standard]({{ site.baseurl }}/assets/image/lateNight.png)
 
