@@ -23,9 +23,9 @@ ROBOTS WERE MADE...
 
 Over the 2023 Summer Term from July 4 to August 10, myself, Ebrahim Hussain, Amr Sherif, and Dhruv Arun came together in a team of 4 for the annual ENPH 253 robot competition. The final robot photos above represent all of our unique contributions and our less than straightforward path which led us to our final design. This post highlights our conceptual ideas, decisions, and the manufacturing of our robot. We concluded the term with a 2nd-place finish.
 
-The full race can be watched [here](https://www.youtube.com/live/gXMnazr8vEo?si=DzM_r1Ch8ZJGJhDZ).
+- The full race can be watched [here](https://www.youtube.com/live/gXMnazr8vEo?si=DzM_r1Ch8ZJGJhDZ).
 
-The rules and course webpage can be found [here](https://docs.google.com/document/d/e/2PACX-1vS4bQXNVCvEt-UMX50Rsar0Wds5AqRDQToN8ABxkS7ocnluPU8JlCNRYIkiXptbHYsrAI_WKzwC9IwO/pub).
+- The rules and course webpage can be found [here](https://docs.google.com/document/d/e/2PACX-1vS4bQXNVCvEt-UMX50Rsar0Wds5AqRDQToN8ABxkS7ocnluPU8JlCNRYIkiXptbHYsrAI_WKzwC9IwO/pub).
 
 
 **Late Night CAD Session**:
