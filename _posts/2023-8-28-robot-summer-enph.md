@@ -25,8 +25,18 @@ Over the 2023 Summer Term from July 4 to August 10, myself, Ebrahim Hussain, Amr
 
 - The full race can be watched [here](https://www.youtube.com/live/gXMnazr8vEo?si=DzM_r1Ch8ZJGJhDZ).
 
-- The rules and course webpage can be found [here](https://docs.google.com/document/d/e/2PACX-1vS4bQXNVCvEt-UMX50Rsar0Wds5AqRDQToN8ABxkS7ocnluPU8JlCNRYIkiXptbHYsrAI_WKzwC9IwO/pub).
+**Summary of Rules:**
 
+- Heats are 2 minutes long.
+- Robots score points by picking up prize blocks (labelled “Bonus”) on the track, coins (labelled “Coin”) on the zipline, or by completing a lap. Blocks and coins are worth 1 point each, while a lap is worth 3.
+- Regardless of START(1) or START(2), a lap is counted when a robot completes the following in order:
+  1. Crosses over the finish line.
+  2. Goes up the ramp (blue, top right) and either jumps down on the left side of Rainbow Road or loops around to START(2).
+  3. Travels under Rainbow Road from the left and crosses the finish line again.
+- A magnetic “bomb” is placed on the track, which has the same footprint as a regular Bonus/prize block. Each robot is also allowed to drop one extra bomb on the track at any time throughout the heat.
+  - Any robot that picks up a bomb or tips it on its side has “detonated” the bomb, and they must restart, and also lose -3 points from any existing block/coin points.
+
+- The rules and course webpage can be found [here](https://docs.google.com/document/d/e/2PACX-1vS4bQXNVCvEt-UMX50Rsar0Wds5AqRDQToN8ABxkS7ocnluPU8JlCNRYIkiXptbHYsrAI_WKzwC9IwO/pub).
 
 **Late Night CAD Session**:
 
