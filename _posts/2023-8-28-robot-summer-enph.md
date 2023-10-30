@@ -36,7 +36,7 @@ Over the 2023 Summer Term from July 4 to August 10, myself, Ebrahim Hussain, Amr
 - A magnetic “bomb” is placed on the track, which has the same footprint as a regular Bonus/prize block. Each robot is also allowed to drop one extra bomb on the track at any time throughout the heat.
   - Any robot that picks up a bomb or tips it on its side has “detonated” the bomb, and they must restart, and also lose -3 points from any existing block/coin points.
 
-- The rules and course webpage can be found [here](https://docs.google.com/document/d/e/2PACX-1vS4bQXNVCvEt-UMX50Rsar0Wds5AqRDQToN8ABxkS7ocnluPU8JlCNRYIkiXptbHYsrAI_WKzwC9IwO/pub).
+The rules and course webpage can be found [here](https://docs.google.com/document/d/e/2PACX-1vS4bQXNVCvEt-UMX50Rsar0Wds5AqRDQToN8ABxkS7ocnluPU8JlCNRYIkiXptbHYsrAI_WKzwC9IwO/pub).
 
 **Late Night CAD Session**:
 
