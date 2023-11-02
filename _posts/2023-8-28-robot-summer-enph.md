@@ -67,7 +67,7 @@ details[open] summary {
 }
 </style>
 
-# AND SO IT GOES...
+# TIMELINE:
 
 <details>
   <summary>Brainstorming/Designing</summary>
