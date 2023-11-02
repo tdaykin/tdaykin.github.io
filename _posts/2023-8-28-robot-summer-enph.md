@@ -82,6 +82,8 @@ details[open] summary {
 
   **Firstly, we needed to choose our steering system.** This is important as it will determine where many elements of the robot will go, such as motors, electronics, and our pickup mechanism. The two types of steering we considered were either Ackermann or Differential. Ackermann is familiar to us as we see it in cars, where the back wheels stay at a certain speed and the front wheels can turn. Whereas in differential steering, the back wheels turn at different speeds to turn (i.e., if the left wheel is spinning slower than the right, the robot will turn left).
 
+  <br>
+
   However, from our understanding and research, Ackermann steering, provided the right geometry and tuning can be much faster than differential steering. With this in mind, we chose differential, while every other team chose Ackermann. This fact definitely made us think about our choice, but those thoughts did not last for long, as we were certain our choice took into consideration that this whole competition was something new to us and we wanted a steering mechanism that we could easily deploy and redeploy. Another observation that pushed us towards this steering mechanism was that the course has some very sharp turns, which in differential steering are easier to control, in just software, rather than in Ackermann steering where you would need to consider the whole chassis layout in order to accomplish those turns.
 
   So initially with our constraints, we wanted to design a robot that looked something like this:
