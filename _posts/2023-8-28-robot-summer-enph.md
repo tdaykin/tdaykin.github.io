@@ -26,6 +26,7 @@ Over the 2023 Summer Term from July 4 to August 10, myself, Ebrahim Hussain, Amr
 - The full race can be watched [here](https://www.youtube.com/live/gXMnazr8vEo?si=DzM_r1Ch8ZJGJhDZ).
 
 **The Track:**
+
 ![253 Track 2023]({{ site.baseurl }}/assets/image/253track.png)
 
 **Summary of Rules:**
