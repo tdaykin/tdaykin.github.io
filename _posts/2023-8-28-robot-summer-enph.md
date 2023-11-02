@@ -25,6 +25,9 @@ Over the 2023 Summer Term from July 4 to August 10, myself, Ebrahim Hussain, Amr
 
 - The full race can be watched [here](https://www.youtube.com/live/gXMnazr8vEo?si=DzM_r1Ch8ZJGJhDZ).
 
+**The Track:**
+![253 Track 2023]({{ site.baseurl }}/assets/image/253track.png)
+
 **Summary of Rules:**
 
 - Heats are 2 minutes long.
@@ -38,9 +41,11 @@ Over the 2023 Summer Term from July 4 to August 10, myself, Ebrahim Hussain, Amr
 
 The rules and course webpage can be found [here](https://docs.google.com/document/d/e/2PACX-1vS4bQXNVCvEt-UMX50Rsar0Wds5AqRDQToN8ABxkS7ocnluPU8JlCNRYIkiXptbHYsrAI_WKzwC9IwO/pub).
 
+<!--
 **Late Night CAD Session**:
 
 ![Probably an Industry Standard]({{ site.baseurl }}/assets/image/lateNight.png)
+-->
 
 <style>
 details {
@@ -73,7 +78,7 @@ details[open] summary {
 
 Teams were allowed to do almost anything they wanted, including jumping off the ramps, using the zipline, or traveling over the rocks to gain a shortcut to the finish line. However, before talking to each other as a team, we all decided that we would follow tape and dedicate our focus on trying to pick up blocks/avoid them passively.
 
-<img src="{{ site.baseurl }}/assets/image/sumCrayCrayCAD.png" alt="CADGoesHard">
+<img src="{{ site.baseurl }}/assets/image/steering253.png" alt="Ack vs Diff Steering">
 
 **Firstly, we needed to choose our steering system.** This is important as it will determine where many elements of the robot will go, such as motors, electronics, and our pickup mechanism. The two types of steering we considered were either Ackermann or Differential. Ackermann is familiar to us as we see it in cars, where the back wheels stay at a certain speed and the front wheels can turn. Whereas in differential steering, the back wheels turn at different speeds to turn (i.e., if the left wheel is spinning slower than the right, the robot will turn left).
 
@@ -81,12 +86,13 @@ However, from our understanding and research, Ackermann steering, provided the r
 
 So initially with our constraints, we wanted to design a robot that looked something like this:
 
-<img src="{{ site.baseurl }}/assets/image/sumCrayCrayCAD.png" alt="CADGoesHard">
+<img src="{{ site.baseurl }}/assets/image/initialpresentation253.png" alt="Initial CAD pic 1">
 
 Where we drive around the track, the wings would fold inwards to collect a block and outward to avoid bombs like below:
 
-<img src="{{ site.baseurl }}/assets/image/sumCrayCrayCAD.png" alt="CADGoesHard">
-
+<img src="{{ site.baseurl }}/assets/image/initialpresentation2532.png" alt="Initial CAD pic 2">
+<img src="{{ site.baseurl }}/assets/image/initialpresentation2533.png" alt="Initial CAD pic 3">
+<img src="{{ site.baseurl }}/assets/image/initialpresentation2534.png" alt="Initial CAD pic 4">
 
 </details>
 
