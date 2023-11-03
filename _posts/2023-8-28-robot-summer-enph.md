@@ -83,11 +83,11 @@ details[open] summary {
 
   <p>However, from our understanding and research, Ackermann steering, provided the right geometry and tuning can be much faster than differential steering. With this in mind, we chose differential, while every other team chose Ackermann. This fact definitely made us think about our choice, but those thoughts did not last for long, as we were certain our choice took into consideration that this whole competition was something new to us and we wanted a steering mechanism that we could easily deploy and redeploy. Another observation that pushed us towards this steering mechanism was that the course has some very sharp turns, which in differential steering are easier to control, in just software, rather than in Ackermann steering where you would need to consider the whole chassis layout in order to accomplish those turns.</p>
 
-  So initially with our constraints, we wanted to design a robot that looked something like this:
+  <p>So initially with our constraints, we wanted to design a robot that looked something like this:</p>
 
   <img src="{{ site.baseurl }}/assets/image/initialpresentation253.png" alt="Initial CAD pic 1">
 
-  Where we drive around the track, the wings would fold inwards to collect a block and outward to avoid bombs like below:
+  <p>Where we drive around the track, the wings would fold inwards to collect a block and outward to avoid bombs like below:</p>
 
   <img src="{{ site.baseurl }}/assets/image/initialpresentation2532.png" alt="Initial CAD pic 2">
   <img src="{{ site.baseurl }}/assets/image/initialpresentation2533.png" alt="Initial CAD pic 3">
