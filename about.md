@@ -4,7 +4,7 @@ title: CV - 2023
 permalink: /about
 ---
 
-[Download My Resume](/assets/TrevorDaykin_ResumeWeb.pdf){:target="_blank" download}
+<a href="/assets/TrevorDaykin_ResumeWeb.pdf" target="_blank" download>Download Resume</a>
 
 **Email:** [trevorddaykin@gmail.com](mailto:trevorddaykin@gmail.com)  
 **LinkedIn:** [linkedin.com/in/trevordaykin](https://linkedin.com/in/trevordaykin)
