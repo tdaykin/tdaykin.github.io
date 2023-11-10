@@ -7,7 +7,7 @@ permalink: /about
 [Download](/assets/TrevorDaykin_ResumeWeb.pdf.pdf){:target="_blank"}
 
 **Email:** [trevorddaykin@gmail.com](mailto:trevorddaykin@gmail.com)  
-**LinkedIn:** [linkedin.com/in/trevorddaykin](https://linkedin.com/in/trevorddaykin)
+**LinkedIn:** [linkedin.com/in/trevordaykin](https://linkedin.com/in/trevordaykin)
 
 ## Profile:
 
