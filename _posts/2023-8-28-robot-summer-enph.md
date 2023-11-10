@@ -9,7 +9,7 @@ header_image: /assets/image/tmoneyZoomZoomy.gif
 
     /* Adjust the top margin of the posts container to push it down */
     .posts {
-        margin-top: 25px; /* Add more space at the top of the posts container */
+        margin-top: 35px; /* Add more space at the top of the posts container */
         width: 100%; /* Full width of the parent container */
         position: relative;
         z-index: 3; /* Above the background section but below the navigation and header */
