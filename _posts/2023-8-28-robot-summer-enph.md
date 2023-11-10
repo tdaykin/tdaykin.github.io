@@ -4,6 +4,20 @@ title: ROBOT SUMMER
 categories: [ENPH, SUMMER, ROBOT]
 header_image: /assets/image/tmoneyZoomZoomy.gif
 ---
+<style>
+    /* Other styles remain unchanged */
+
+    /* Adjust the top margin of the posts container to push it down */
+    .posts {
+        margin-top: 50px; /* Add more space at the top of the posts container */
+        width: 100%; /* Full width of the parent container */
+        position: relative;
+        z-index: 3; /* Above the background section but below the navigation and header */
+    }
+
+    /* Rest of your styles */
+</style>
+
 ROBOTS WERE MADE... 
 
 <!--more-->
