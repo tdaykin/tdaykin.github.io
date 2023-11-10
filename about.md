@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CV - 2023
+title: CV - 2023 [Download](/assets/TrevorDaykin_ResumeWeb.pdf.pdf){:target="_blank"}
 permalink: /about
 ---
 
