@@ -1,8 +1,10 @@
 ---
 layout: page
-title: CV - 2023 [Download](/assets/TrevorDaykin_ResumeWeb.pdf.pdf){:target="_blank"}
+title: CV - 2023
 permalink: /about
 ---
+
+[Download](/assets/TrevorDaykin_ResumeWeb.pdf.pdf){:target="_blank"}
 
 **Email:** [trevorddaykin@gmail.com](mailto:trevorddaykin@gmail.com)  
 **LinkedIn:** [linkedin.com/in/trevorddaykin](https://linkedin.com/in/trevorddaykin)
