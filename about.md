@@ -41,8 +41,8 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 
 ### Nand2Tetris
 **Technologies:** HDL, Gate logics, Git  
-- Developed a comprehensive understanding of computer architecture by building a computer system from the NAND gate up, involving detailed knowledge of CPU architecture, ALU design, and memory systems
-- Acquired hands-on experience in digital logic design using Hardware Description Language (HDL), synthesizing various logic gates and sequentially developing larger components of a computer system, such as Arithmetic Logic Units (ALUs) and Central Processing Units (CPUs)
+- Developed an understanding of computer architecture by building a modified computer system from the NAND gate up, learning knowledge of CPU architecture, ALU design, and memory systems
+- Acquired hands-on experience in digital logic design using Hardware Description Language (HDL), synthesizing various logic gates and sequentially developing larger components of a modified computer system, such as ALUs and CPUs
 
 ### Canadian Synthetic Biology Education Research Group, SYNB3
 **Technologies:** Python: scikit-learn, NumPy, pandas  
