@@ -84,7 +84,5 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 
 - Lead a multidisciplinary team as we discovered innovations in air purification which evolved into authoring an abstract and representing our findings in a non-technical presentation
 
-[Daykin, T. D., Holzman, I. M., & Chin, S. (2022). Development of a UV-LED based air purification system: A research study. Undergraduate Research in Natural and Clinical Science and Technology (URNCST) Journal, 6(4), A29–A29.](https://doi.org/10.26685/urncst.375)
-
 Daykin, T. D., Holzman, I. M., & Chin, S. (2022). *Development of a UV-LED based air purification system: A research study*. Undergraduate Research in Natural and Clinical Science and Technology (URNCST) Journal, 6(4), A29–A29. [https://doi.org/10.26685/urncst.375](https://doi.org/10.26685/urncst.375)
 
