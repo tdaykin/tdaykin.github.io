@@ -60,7 +60,7 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 
 - **Languages:** Python, Java, C/C++, R, MATLAB, LaTeX
 - **Developer Tools:** Visual Studio, IntelliJ, Git
-- **Libraries:** pandas, NumPy, Matplotlib, scikit-learn
+- **Libraries:** pandas, NumPy, matplotlib, scikit-learn
 
 ## Community Engagement:
 
