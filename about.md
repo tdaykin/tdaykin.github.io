@@ -53,7 +53,7 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 ### Multidisciplinary Undergraduate Research Competition
 **Technologies:** R, Statistical Methods: Hypothesis Testing  
 - Analyzed and statistically compared market data of air purifiers using R in order to lower costs and increase efficiency and safety of incoming products for COVID-19
-- Interpreted how ultraviolet air purifying works, specifically with \( TiO_2 \) together with multi-walled carbon nanotubes, which reduce the harmful effects of UV radiation
+- Interpreted how ultraviolet air purifying works, specifically with TiO<sub>2</sub> together with multi-walled carbon nanotubes, which reduce the harmful effects of UV radiation
 - Transformed our findings into digestible content by using python and matplotlib to be shared in a conference
 
 ## Technical Skills:
