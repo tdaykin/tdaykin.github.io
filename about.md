@@ -11,7 +11,7 @@ permalink: /about
 
 ## Profile:
 
-My goal is to be a part of the innovative technology scene. Over the recent years I have realized how valuable it is to take initiative on tasks both personal and professional as I have lived the positive impacts it has on goals. I routinely put emphasis on being accountable and meaningful which has given me the ability to lead in competitive environments.
+My goal is to be a part of the innovative technology scene. In my recent role at a leading global fuel cell company, I took the initiative and pursued a variety of projects, from liquid injection molding to particle analysis. From there, I honed my ability to lead in an ambitious environment while emphasizing my accountability and meaningful contributions.
 
 ## Education:
 
@@ -26,10 +26,11 @@ My goal is to be a part of the innovative technology scene. Over the recent year
 ### MEA Process Engineer Co-op, Advanced Manufacturing
 **Ballard Power Systems** - Burnaby, B.C., Canada  
 *Jan. 2023 -- April. 2023*  
-- Applied a structured approach to qualify an upcoming Liquid Injection Molding process; involving data collection, capability/GR\&R analysis, and ultimately, a presentation of results in a lean six sigma environment
+- Applied a structured approach to qualify an upcoming Liquid Injection Molding process; involving data collection, capability/GR&R analysis, and ultimately, a presentation of results in a lean six sigma environment
 - Hands-on experience in operating Liquid Injection Molding machines including troubleshooting and control over molding parameters
-- Developed and implemented automated data analysis in excel, transforming raw data into actionable insights; increasing overall efficiency by 98\%
+- Developed and implemented automated data analysis in excel, transforming raw data into actionable insights; increasing overall efficiency by 98%
 - Accelerated production times by 75% through rapid prototyping of 3D printed fixtures designed in CREO
+- In-depth knowledge on the manufacturing and development of fuel cells
 
 ## Technical Projects:
 
