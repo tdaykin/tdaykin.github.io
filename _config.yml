@@ -115,3 +115,9 @@ excerpt_separator: <!--more-->
 
 #Google Analytics
 google_analytics: G-6T1MXEH5CT
+
+#For thumbnail:
+collections:
+  projects:
+    output: true
+
