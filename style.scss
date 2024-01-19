@@ -139,10 +139,11 @@ figcaption {
 }
 
 hr {
-  position: relative;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  border: 01px solid $lightGray;
+  //position: relative;
+  //margin-top: 35px;
+  //margin-bottom: 35px;
+  //border: 01px solid $lightGray;
+  border: none;
 }
 
 .date {
@@ -422,7 +423,8 @@ a[href^="#fnref:"] {
   display: flex;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 01px solid $lightGray;
+  border-bottom: none;
+  //border-bottom: 01px solid $lightGray;
 
   @include mobile {
     display: block;
