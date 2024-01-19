@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ROBOT SUMMER
+title: Autonomous Driving Robot
 categories: [ENPH, SUMMER, ROBOT]
 header_image: /assets/image/tmoneyZoomZoomy.gif
 ---
@@ -18,7 +18,7 @@ header_image: /assets/image/tmoneyZoomZoomy.gif
     /* Rest of your styles */
 </style>
 
-ROBOTS WERE MADE... 
+<!--ROBOTS WERE MADE... -->
 
 <!--more-->
 
