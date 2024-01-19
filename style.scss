@@ -620,26 +620,26 @@ footer {
 }
 
 //thumbnail stuff:
-.projects-grid {
+.posts-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
+  padding: 20px;
 }
 
-.project-tile {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
+/* Individual post tile */
+.post-tile {
+  background: white; /* Or any color you prefer for the tile background */
+  border: 1px solid #ccc; /* Optional border */
+  padding: 15px;
+  border-radius: 5px; /* Optional rounded corners */
 }
 
-.project-tile img {
+/* Thumbnail image styling */
+.post-tile img {
   width: 100%;
   height: auto;
-  display: block;
-}
-
-.project-tile h3 {
-  margin-top: 10px;
+  border-radius: 5px; /* Optional rounded corners for images */
 }
 
 
