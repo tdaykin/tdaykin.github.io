@@ -620,28 +620,34 @@ footer {
 }
 
 //thumbnail stuff:
+
+/* Grid container */
 .posts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
+  position: relative; /* This ensures z-index is applied */
+  z-index: 2; /* Adjust this value based on your needs */
 }
 
 /* Individual post tile */
 .post-tile {
-  background: white; /* Or any color you prefer for the tile background */
-  border: 1px solid #ccc; /* Optional border */
+  background: white;
+  border: 1px solid #ccc;
   padding: 15px;
-  border-radius: 5px; /* Optional rounded corners */
+  border-radius: 5px;
+  overflow: hidden; /* Ensures that the image does not overflow the tile */
 }
 
 /* Thumbnail image styling */
 .post-tile img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px; /* Optional rounded corners for images */
+  max-width: 100%; /* Ensures that the image does not exceed the width of the tile */
+  height: auto; /* Keeps the image aspect ratio intact */
+  display: block; /* Removes any inline spacing */
+  margin-bottom: 15px; /* Space between the image and the text below it */
+  object-fit: cover; /* Ensures that the image covers the area, can be changed to 'contain' to fit the whole image */
 }
-
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
