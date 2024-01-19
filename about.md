@@ -34,7 +34,7 @@ My goal is to be a part of the innovative technology scene. In my recent role at
 
 ## Technical Projects:
 
-### Autonomous Robot Competition: 2nd Place
+### Autonomous Driving Robot Competition: 2nd Place
 **Technologies:** CAD, Machine Shop, C++  
 - Brainstormed, designed, and manufactured an autonomous robot with a group of 4 to race on the same track as other robots all while passively picking up and avoiding certain objects
 - Created the entire chassis, ensuring all sensors, circuits and mechanical components function as intended, quickly prototyping drawings into reality by using 3D printers and laser/waterjet cutters
