@@ -634,8 +634,10 @@ footer {
 
 /* Individual post tile */
 .post-tile {
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid #000000;
+  //background: rgba(0, 0, 0, 0.3);
+  background: none;
+  //border: 1px solid #000000;
+  border: none;
   padding: 10px;
   border-radius: 5px;
   overflow: hidden; /* Ensures that the image does not overflow the tile */
