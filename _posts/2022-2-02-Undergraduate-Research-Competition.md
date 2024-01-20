@@ -20,6 +20,8 @@ thumbnail: /assets/image/lookinSexy.png
     /* Rest of your styles */
 </style>
 
+<!--more-->
+
 # Development of a UV-LED Based Air Purification System :
 
 ![MURCpublished]({{ site.baseurl }}/assets/image/MURCpublished.png)
