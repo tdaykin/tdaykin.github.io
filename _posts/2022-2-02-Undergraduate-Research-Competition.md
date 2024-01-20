@@ -22,17 +22,18 @@ thumbnail: /assets/image/lookinSexy.png
 
 # Development of a UV-LED Based Air Purification System :
 
-![[MURCpublished.png]]
+![MURCpublished]({{ site.baseurl }}/assets/image/MURCpublished.png)
 
 <div style="margin-left: 20px; text-indent: -20px;">
   Daykin, T. D., Holzman, I. M., & Chin, S. (2022). <em>Development of a UV-LED based air purification system: A research study</em>. Undergraduate Research in Natural and Clinical Science and Technology (URNCST) Journal, 6(4), A29–A29. <a href="https://doi.org/10.26685/urncst.375">https://doi.org/10.26685/urncst.375</a>
 </div>
 
 # Multidisciplinary Undergraduate Research Competition (my slides):
-![Slide 1](url-to-slide-1-image)
-![Slide 2](url-to-slide-2-image)
-![Slide 3](url-to-slide-3-image)
-![Slide 4](url-to-slide-4-image)
+![Slide 1](/assets/image/Slide1.png)
+![Slide 2](/assets/image/Slide2.png)
+![Slide 3](/assets/image/Slide3.png)
+![Slide 4](/assets/image/Slide4.png)
+
 # Literature Review: Improving Design and Safety in UVC-LED Air Purification Systems
 
 ### 1. Literature Review:
@@ -58,11 +59,11 @@ In order to establish a relationship concerning the improvement of the design an
 </div>
 ### 3. Results and Discussion:
 
-![[MURCpic1.png]]
+![MURCpic1]({{ site.baseurl }}/assets/image/MURCpic1.png)
 #### Figure 1.0:
 In the data collected the following assumptions were made: the room was indoors, there was no wind activity, there were no people in the room and the room was 20 m<sup>3</sup> in volume. After these assumptions ACHs of various common air purifiers were recorded. The mean ACH from all devices was 8.22; however, the median ACH was 4.97. From the Air Changes per hour vs Flow Rate graph a relationship between flow rate (Q) and ACH can be made. A Q value of 19 l/s will be able to provide an ACH of 3.5 which according to B.C. Housing Guidelines is optimal for small settings. When observing the three best performing air purifiers two of the three were larger in size; greater than 60 cm in height, which were able to house a fan with greater rotations per minute (RPM). Additionally, of the three, the two larger devices had more filtering abilities possibly due to the device having larger filters; therefore, increasing the area in which microorganisms and viruses can be eliminated.
 
-| ![[MURC2 1.png]]                                                                                                                                                                                                                                      | ![[MURC21.png]]                                                                                                                                                                                                                                      | ![[MURC22.png]]                                                                                                                                                                                                                                      |
+| ![MURCpic2]({{ site.baseurl }}/assets/image/MURCpic2.png)                                                                                                                                                                                                                                      | ![MURCpic21]({{ site.baseurl }}/assets/image/MURCpic21.png)                                                                                                                                                                                                                                      | ![MURCpic22]({{ site.baseurl }}/assets/image/MURCpic22.png)                                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Figure 2.0**                                                                                                                                                                                                                               | **Figure 2.1**                                                                                                                                                                                                                               | **Figure 2.2**                                                                                                                                                                                                                               |
 | The boxplot in figure 2.0 represents the ACH of all tested air purifiers. The ACHs have a mean of 8.22 and a median of 4.97. The max and min ACHs were 36.54 and 0.0036 respectively. Q1 and Q3 with ACHs of 0.91 and 7.71 respectively. | The boxplot in figure 2.0 represents the ACH of all tested air purifiers. The ACHs have a mean of 8.22 and a median of 4.97. The max and min ACHs were 36.54 and 0.0036 respectively. Q1 and Q3 with ACHs of 0.91 and 7.71 respectively. | The boxplot in figure 2.2 represents the ACH of stationary air purifiers. The ACHs have a mean of 11.91 and a median of 4.98. The max and min ACHs were 36.54 and 1.12 respectively. Q1 and Q3 with ACHs of 2.88 and 14.01 respectively. |
