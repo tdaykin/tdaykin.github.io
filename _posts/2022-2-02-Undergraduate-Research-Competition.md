@@ -2,8 +2,8 @@
 layout: post
 title: Undergraduate Research Competition
 categories: [ENPH]
-header_image: /assets/image/tmoneyZoomZoomy.gif
-thumbnail: /assets/image/lookinSexy.png
+header_image: /assets/image/URNSTlogo.png
+thumbnail: /assets/image/URNSTlogo.png
 ---
 
 <style>
