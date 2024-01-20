@@ -8,10 +8,7 @@ html {
 }
 
 body {
-  //background: $white;
-  background-color: $white; /* or simply 'white' if not using SCSS */
-  background-image: url(/assets/image/tmoneyZoomZoomy.gif), url(/assets/image/tmoneyZoomZoomy.gif);
-  background-size: cover -100px, auto;
+  background: $white;
   font-family: $sans-font-family;
   font-weight: 400;
   font-size: 18px;
