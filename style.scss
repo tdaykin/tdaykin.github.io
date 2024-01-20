@@ -11,9 +11,7 @@ body {
   //background: $white;
   background-color: $white; /* or simply 'white' if not using SCSS */
   background-image: url(/assets/image/tmoneyZoomZoomy.gif), url(/assets/image/tmoneyZoomZoomy.gif);
-  background-repeat: no-repeat, repeat-y;
-  background-position: center top, center bottom;
-  background-size: cover, auto;
+  background-size: cover -100px, auto;
   font-family: $sans-font-family;
   font-weight: 400;
   font-size: 18px;
