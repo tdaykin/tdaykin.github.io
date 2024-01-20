@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Undergraduate Research Competition
-categories:
-  - ENPH
+categories: [ENPH]
 header_image: /assets/image/tmoneyZoomZoomy.gif
 thumbnail: /assets/image/lookinSexy.png
 ---
+
 <style>
     /* Other styles remain unchanged */
 
