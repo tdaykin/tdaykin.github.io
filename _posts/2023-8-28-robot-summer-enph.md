@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AUTONOMOUS DRIVING ROBOT
+title: Autonomous Driving Robot
 categories: [ENPH, SUMMER, ROBOT]
 header_image: /assets/image/tmoneyZoomZoomy.gif
 thumbnail: /assets/image/lookinSexy.png
