@@ -637,7 +637,7 @@ footer {
   background: rgba(0, 0, 0, 0.3);
   //border: 1px solid #000000;
   border: none;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   overflow: hidden; /* Ensures that the image does not overflow the tile */
 }
@@ -647,7 +647,7 @@ footer {
   max-width: 100%; /* Ensures that the image does not exceed the width of the tile */
   height: auto; /* Keeps the image aspect ratio intact */
   display: block; /* Removes any inline spacing */
-  margin-bottom: 10px; /* Space between the image and the text below it */
+  margin-bottom: 7px; /* Space between the image and the text below it */
   object-fit: cover; /* Ensures that the image covers the area, can be changed to 'contain' to fit the whole image */
 }
 
