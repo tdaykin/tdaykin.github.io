@@ -180,7 +180,7 @@ details[open] summary {
 
 <p>and leaves the remainder of the pins free for switches, LEDS, hall-sensors, and anything else.</p>
 
-<p>For the tape-sensor board, Dhruv made the schematic and Ebi made the PCB layout and soldered it together. It uses surface-mount resistors which was needed since the tape sensors sit very low to the ground. Here’s a video of it on a servo mount which I made:</p>
+<p>For the tape-sensor board, Dhruv made the schematic and Ebi made the PCB layout and soldered it together. It uses surface-mount resistors which was needed since the tape sensors sit very low to the ground. Here’s a video of it on a servo mount which I made using the laser cutter to cut my cad drawings. The black star shaped connector push fit into my mount, for easy prototyping:</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/servermount.gif" alt="servermount.gif">
