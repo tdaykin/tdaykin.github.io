@@ -250,7 +250,7 @@ To understand why, consider the following error function e(t), in red:</p>
 
 <p>We fail on rainbow road since this was our first time testing, and the colors interfered with the tape sensor</p>
 
-<strong>Block Pickup:</strong>
+<!--<strong>Block Pickup:</strong>-->
   
 </details>
 
