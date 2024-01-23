@@ -131,7 +131,7 @@ details[open] summary {
 <details>
   <summary>Construction + Redesign + Maybe a whole new idea</summary>
   
-<strong>Electronics:<\strong>
+<strong>Electronics:</strong>
 
 <p>To start we built a simple line follower, something we could adjust later on. Ebi owned build the motor drivers, tape sensors and microcontroller boards.</p> 
 
@@ -143,7 +143,8 @@ details[open] summary {
   <img src="{{ site.baseurl }}/assets/image/dual-hbridge.png" alt="dual-hbridge.png1">
 </div> 
 
-<p>Attached is a step through guide made by Ebi: ![[H-Bridge Step-Through.pdf]]</p>
+<p>Attached is a step through guide made by Ebi: <a href="/assets/image/H-Bridge Step-Through.pdf" download="H-Bridge Step-Through.pdf">H-Bridge Step-Through PDF</a>
+</p>
 
 <p>This resulted in:</p>
 
@@ -168,19 +169,15 @@ details[open] summary {
 
 <p>This is somewhat overkill and wasn’t really required in the end, but I designed this board pretty early on before any other sensor / peripheral decisions were made. So it just made sense to be safe and provide the possibility to house two microcontrollers. It has:</p>
 
--  x3 SONAR ports
-
-- x4 I2C ports (two of them tied together ___if___ the microcontrollers need to talk to each other)
-
-- x6 AIO available for tape sensors,
-
-- x3 servo ports
-
-- a UART port for serial monitor, power selection
-
-- 2 2-wide PWM ports for two H-Bridges
-
-- voltage level selectors for I2C, Sonar, and Tape Sensors
+<ul>
+    <li>x3 SONAR ports</li>
+    <li>x4 I2C ports (two of them tied together <em>if</em> the microcontrollers need to talk to each other)</li>
+    <li>x6 AIO available for tape sensors</li>
+    <li>x3 servo ports</li>
+    <li>a UART port for serial monitor, power selection</li>
+    <li>2 2-wide PWM ports for two H-Bridges</li>
+    <li>voltage level selectors for I2C, Sonar, and Tape Sensors</li>
+</ul>
 
 <p>and leaves the remainder of the pins free for switches, LEDS, hall-sensors, and anything else.</p>
 
@@ -202,7 +199,7 @@ details[open] summary {
   <img src="{{ site.baseurl }}/assets/image/sc3.png" alt="Screenshot 2024-01-22 at 4.03.32 PM.png">
 </div>
 
-<p>You can find the [Desmos here](https://www.desmos.com/calculator/4zlgnq8wji), and play around with the ϕϕ﻿, which is the displacement of the sensor array off the line. The purple line represents the error function value, and the dots are the sensor locations</p>
+<p>You can find the <a href="https://www.desmos.com/calculator/4zlgnq8wji">Desmos here</a>, and play around with the ϕϕ﻿, which is the displacement of the sensor array off the line. The purple line represents the error function value, and the dots are the sensor locations</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/PIDs23.gif" alt="PIDs23.gif">
