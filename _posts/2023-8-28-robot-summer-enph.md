@@ -18,6 +18,9 @@ thumbnail: /assets/image/lookinSexy.png
 
     /* Rest of your styles */
 </style>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 
 <!--ROBOTS WERE MADE... -->
 
@@ -192,7 +195,12 @@ details[open] summary {
 
 <p>Instead of computing each sensor value and referencing a lookup table, I decided to treat each sensor value as a **force** on a seesaw. Then, simply let the displacement be the net torque on it! Of course, if the robot is completely off the line, then just reference the magnitude of the previous displacement to know whether you are too left, or too right.</p>
 
-<p>That’s basically what I’m doing here — writing it in code is much simpler than doing it mathematically though. The key part is the <p>&#8721; S[n]N[n] / S[n]</p>
+<p>That’s basically what I’m doing here — writing it in code is much simpler than doing it mathematically though. The key part is the 
+
+<div class="centered-image">
+  <p>\( \sum (S[n]N[n]/S[n]) \)</p>
+</div>
+
  which is simply the average. N is the location of each sensor and S is the associated sensor values.</p>
 
 <div class="centered-image">
