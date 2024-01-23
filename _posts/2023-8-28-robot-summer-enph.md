@@ -157,13 +157,13 @@ This resulted in:
 Here’s the unpopulated Blue-Pill/microcontroller board, and the tape sensor board:
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/image/Screenshot 2024-01-22 at 3.50.09 PM.png" alt="Screenshot 2024-01-22 at 3.50.09 PM.png">
+  <img src="{{ site.baseurl }}/assets/image/sc1.png" alt="Screenshot 2024-01-22 at 3.50.09 PM.png">
 </div>
 
 BP Board PCB Layout:
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/image/Screenshot 2024-01-22 at 3.51.03 PM.png" alt="Screenshot 2024-01-22 at 3.51.03 PM.png">
+  <img src="{{ site.baseurl }}/assets/image/sc2.png" alt="Screenshot 2024-01-22 at 3.51.03 PM.png">
 </div>
 
 This is somewhat overkill and wasn’t really required in the end, but I designed this board pretty early on before any other sensor / peripheral decisions were made. So it just made sense to be safe and provide the possibility to house two microcontrollers. It has:
@@ -199,7 +199,7 @@ Instead of computing each sensor value and referencing a lookup table, I decided
 That’s basically what I’m doing here — writing it in code is much simpler than doing it mathematically though. The key part is the (∑S[n]N[n]∑S[n]∑S[n]∑S[n]N[n] - fix latex)​﻿ which is simply the average. N is the location of each sensor and S is the associated sensor values.
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/image/Screenshot 2024-01-22 at 4.03.32 PM.png" alt="Screenshot 2024-01-22 at 4.03.32 PM.png">
+  <img src="{{ site.baseurl }}/assets/image/sc3.png" alt="Screenshot 2024-01-22 at 4.03.32 PM.png">
 </div>
 
 You can find the [Desmos here](https://www.desmos.com/calculator/4zlgnq8wji), and play around with the ϕϕ﻿, which is the displacement of the sensor array off the line. The purple line represents the error function value, and the dots are the sensor locations
@@ -215,7 +215,7 @@ This makes intuitive sense for tape-following, because you don’t really care a
 The final “non-traditional” part Ebi and I implemented was **filtering** the derivative of our error function, so that the PID equation is out = Kpe(t)+Ki∫e(t)+Kdlowpass(ddte(t))out=Kp​e(t)+Ki​∫e(t)+Kd​lowpass(dtd​e(t))﻿. To understand why, consider the following error function e(t), in red:
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/Screenshot 2024-01-22 at 4.05.56 PM.png" alt="Screenshot 2024-01-22 at 4.05.56 PM.png">
+  <img src="{{ site.baseurl }}/assets/sc4.png" alt="Screenshot 2024-01-22 at 4.05.56 PM.png">
 </div>
 
 This error function simply means the robot’s displacement off the line has changed. It looks like a step rather than a smooth change because these signals are being processed inside the microcontroller, in thee **discrete* time domain.
@@ -223,7 +223,7 @@ This error function simply means the robot’s displacement off the line has cha
 If we then compute the almost-discrete-derivative as error - prevErrorerror﻿, we’d get an impulse, as shown in blue. This isn’t that useful because it means the derivative term in the PID equation only lasts for one loop iteration, which is on the order of μμ﻿s — that’s not nearly enough time for it to do much useful work. A solution to this is to **low-pass filter (LPF)** the differentiated error signal, shown in green. In an electrical context, this green signal represents the discharging of a capacitor, but instead we’re doing it in software using a first-order IIR filter:
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/Screenshot 2024-01-22 at 4.07.27 PM.png" alt="Screenshot 2024-01-22 at 4.07.27 PM.png">
+  <img src="{{ site.baseurl }}/assets/sc5.png" alt="Screenshot 2024-01-22 at 4.07.27 PM.png">
 </div>
 
 Of course there are other ways to do this, and I guess you could choose any decaying function (maybe an average?). All that I’m trying to do is keep the effect of the derivative for longer, so that the KdKd​﻿ term comes into play.
