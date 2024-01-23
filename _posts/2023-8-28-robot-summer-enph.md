@@ -135,7 +135,7 @@ details[open] summary {
 
 <p>To start we built a simple line follower, something we could adjust later on. Ebi owned build the motor drivers, tape sensors and microcontroller boards.</p> 
 
-<strong>1. H-Bridge Motor Drivers:<\strong>
+<strong>1. H-Bridge Motor Drivers:</strong>
 
 <p>The H-Bridge is a relatively simple circuit used to control the **polarity** of the voltage across a load, in our case, a motor. Alongside having control over the speed by PWM, the H-bridge gives us control over the motor’s rotation direction. This is especially important in differential-steering, where in some cases one wheel must spin backward and the other forward to complete a sharp turn. Here is a simple **dual H-bridge** schematic of the motor boards on the robot.</p>
 
