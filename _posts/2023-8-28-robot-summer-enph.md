@@ -217,7 +217,11 @@ details[open] summary {
 
 <p>This makes intuitive sense for tape-following, because you don’t really care about minor deviations off the line, but once your tape sensors are close to leaving the line entirely, you now have a higher error to correct yourself quickly, or to take a sharp turn.</p>
 
-<p>The final “non-traditional” part Ebi and I implemented was <i>filterin</i> the derivative of our error function, so that the PID equation is out = Kpe(t)+Ki∫e(t)+Kdlowpass(ddte(t))out=Kp​e(t)+Ki​∫e(t)+Kd​lowpass(dtd​e(t))﻿. To understand why, consider the following error function e(t), in red:</p>
+<p>The final “non-traditional” part Ebi and I implemented was <i>filterin</i> the derivative of our error function, so that the PID equation is:
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/PIDs23.gif" alt="PIDs23.gif">
+</div>
+To understand why, consider the following error function e(t), in red:</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/sc4.png" alt="Screenshot 2024-01-22 at 4.05.56 PM.png">
@@ -225,7 +229,7 @@ details[open] summary {
 
 <p>This error function simply means the robot’s displacement off the line has changed. It looks like a step rather than a smooth change because these signals are being processed inside the microcontroller, in the <i>discrete</i> time domain.</p>
 
-<p>If we then compute the almost-discrete-derivative as error - prevErrorerror﻿, we’d get an impulse, as shown in blue. This isn’t that useful because it means the derivative term in the PID equation only lasts for one loop iteration, which is on the order of μ﻿s — that’s not nearly enough time for it to do much useful work. A solution to this is to <i>low-pass filter (LPF)</i>i> the differentiated error signal, shown in green. In an electrical context, this green signal represents the discharging of a capacitor, but instead we’re doing it in software using a first-order IIR filter:</p>
+<p>If we then compute the almost-discrete-derivative as error - prevErrorerror﻿, we’d get an impulse, as shown in blue. This isn’t that useful because it means the derivative term in the PID equation only lasts for one loop iteration, which is on the order of μ﻿s — that’s not nearly enough time for it to do much useful work. A solution to this is to <i>low-pass filter (LPF)</i> the differentiated error signal, shown in green. In an electrical context, this green signal represents the discharging of a capacitor, but instead we’re doing it in software using a first-order IIR filter:</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/sc5.png" alt="Screenshot 2024-01-22 at 4.07.27 PM.png">
