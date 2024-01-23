@@ -137,7 +137,7 @@ details[open] summary {
 
 <strong>1. H-Bridge Motor Drivers:</strong>
 
-<p>The H-Bridge is a relatively simple circuit used to control the **polarity** of the voltage across a load, in our case, a motor. Alongside having control over the speed by PWM, the H-bridge gives us control over the motor’s rotation direction. This is especially important in differential-steering, where in some cases one wheel must spin backward and the other forward to complete a sharp turn. Here is a simple **dual H-bridge** schematic of the motor boards on the robot.</p>
+<p>The H-Bridge is a relatively simple circuit used to control the <i>polarity</i> of the voltage across a load, in our case, a motor. Alongside having control over the speed by PWM, the H-bridge gives us control over the motor’s rotation direction. This is especially important in differential-steering, where in some cases one wheel must spin backward and the other forward to complete a sharp turn. Here is a simple <i>dual H-bridge</i> schematic of the motor boards on the robot.</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/dual-hbridge.png" alt="dual-hbridge.png1">
@@ -192,13 +192,14 @@ details[open] summary {
 
 <p>Instead of computing each sensor value and referencing a lookup table, I decided to treat each sensor value as a **force** on a seesaw. Then, simply let the displacement be the net torque on it! Of course, if the robot is completely off the line, then just reference the magnitude of the previous displacement to know whether you are too left, or too right.</p>
 
-<p>That’s basically what I’m doing here — writing it in code is much simpler than doing it mathematically though. The key part is the (∑S[n]N[n]∑S[n]∑S[n]∑S[n]N[n] - fix latex)​﻿ which is simply the average. N is the location of each sensor and S is the associated sensor values.</p>
+<p>That’s basically what I’m doing here — writing it in code is much simpler than doing it mathematically though. The key part is the <p>&#8721; S[n]N[n] / S[n]</p>
+ which is simply the average. N is the location of each sensor and S is the associated sensor values.</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/sc3.png" alt="Screenshot 2024-01-22 at 4.03.32 PM.png">
 </div>
 
-<p>You can find the <a href="https://www.desmos.com/calculator/4zlgnq8wji">Desmos here</a>, and play around with the ϕϕ﻿, which is the displacement of the sensor array off the line. The purple line represents the error function value, and the dots are the sensor locations</p>
+<p>You can find the <a href="https://www.desmos.com/calculator/4zlgnq8wji">Desmos here</a>, and play around with the ϕ, which is the displacement of the sensor array off the line. The purple line represents the error function value, and the dots are the sensor locations</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/PIDs23.gif" alt="PIDs23.gif">
@@ -208,15 +209,15 @@ details[open] summary {
 
 <p>This makes intuitive sense for tape-following, because you don’t really care about minor deviations off the line, but once your tape sensors are close to leaving the line entirely, you now have a higher error to correct yourself quickly, or to take a sharp turn.</p>
 
-<p>The final “non-traditional” part Ebi and I implemented was **filtering** the derivative of our error function, so that the PID equation is out = Kpe(t)+Ki∫e(t)+Kdlowpass(ddte(t))out=Kp​e(t)+Ki​∫e(t)+Kd​lowpass(dtd​e(t))﻿. To understand why, consider the following error function e(t), in red:</p>
+<p>The final “non-traditional” part Ebi and I implemented was <i>filterin</i> the derivative of our error function, so that the PID equation is out = Kpe(t)+Ki∫e(t)+Kdlowpass(ddte(t))out=Kp​e(t)+Ki​∫e(t)+Kd​lowpass(dtd​e(t))﻿. To understand why, consider the following error function e(t), in red:</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/sc4.png" alt="Screenshot 2024-01-22 at 4.05.56 PM.png">
 </div>
 
-<p>This error function simply means the robot’s displacement off the line has changed. It looks like a step rather than a smooth change because these signals are being processed inside the microcontroller, in thee **discrete* time domain.</p>
+<p>This error function simply means the robot’s displacement off the line has changed. It looks like a step rather than a smooth change because these signals are being processed inside the microcontroller, in the <i>discrete</i> time domain.</p>
 
-<p>If we then compute the almost-discrete-derivative as error - prevErrorerror﻿, we’d get an impulse, as shown in blue. This isn’t that useful because it means the derivative term in the PID equation only lasts for one loop iteration, which is on the order of μμ﻿s — that’s not nearly enough time for it to do much useful work. A solution to this is to **low-pass filter (LPF)** the differentiated error signal, shown in green. In an electrical context, this green signal represents the discharging of a capacitor, but instead we’re doing it in software using a first-order IIR filter:</p>
+<p>If we then compute the almost-discrete-derivative as error - prevErrorerror﻿, we’d get an impulse, as shown in blue. This isn’t that useful because it means the derivative term in the PID equation only lasts for one loop iteration, which is on the order of μ﻿s — that’s not nearly enough time for it to do much useful work. A solution to this is to <i>low-pass filter (LPF)</i>i> the differentiated error signal, shown in green. In an electrical context, this green signal represents the discharging of a capacitor, but instead we’re doing it in software using a first-order IIR filter:</p>
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/sc5.png" alt="Screenshot 2024-01-22 at 4.07.27 PM.png">
