@@ -203,10 +203,6 @@ details[open] summary {
 
  which is simply the average. N is the location of each sensor and S is the associated sensor values.</p>
 
-<div class="centered-image">
-  <p>\[ \text{out} = K_p e(t) + K_i \int e(t) \, dt + K_d \cdot \text{lowpass} \left( \frac{d}{dt} e(t) \right) \]</p>
-</div>
-
 <p>You can find the <a href="https://www.desmos.com/calculator/4zlgnq8wji">Desmos here</a>, and play around with the ϕ, which is the displacement of the sensor array off the line. The purple line represents the error function value, and the dots are the sensor locations</p>
 
 <div class="centered-image">
@@ -217,10 +213,12 @@ details[open] summary {
 
 <p>This makes intuitive sense for tape-following, because you don’t really care about minor deviations off the line, but once your tape sensors are close to leaving the line entirely, you now have a higher error to correct yourself quickly, or to take a sharp turn.</p>
 
-<p>The final “non-traditional” part Ebi and I implemented was <i>filterin</i> the derivative of our error function, so that the PID equation is:
+<p>The final “non-traditional” part Ebi and I implemented was <i>filtering</i> the derivative of our error function, so that the PID equation is:
+    
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/image/PIDs23.gif" alt="PIDs23.gif">
+  <p>\[ \text{out} = K_p e(t) + K_i \int e(t) \, dt + K_d \cdot \text{lowpass} \left( \frac{d}{dt} e(t) \right) \]</p>
 </div>
+
 To understand why, consider the following error function e(t), in red:</p>
 
 <div class="centered-image">
@@ -237,7 +235,7 @@ To understand why, consider the following error function e(t), in red:</p>
 
 <p>Of course there are other ways to do this, and I guess you could choose any decaying function (maybe an average?). All that I’m trying to do is keep the effect of the derivative for longer, so that the KdKd​﻿ term comes into play.</p>
 
-<p>The motivation to try something like this is somewhat arbitrary, but we gave it a shot and it had a **significant positive impact on the smoothness of the robot’s tape following at high speeds**.</p>
+<p>The motivation to try something like this is somewhat arbitrary, but we gave it a shot and it had a <i>significant positive impact on the smoothness of the robot’s tape following at high speeds</i>.</p>
 
 <strong>Final run:</strong>
 
