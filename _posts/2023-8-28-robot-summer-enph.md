@@ -193,18 +193,18 @@ details[open] summary {
 
 <p>The PID is probably the simplest part of code of the entire robot, but I wanted to share how I thought about converting tape-sensor data to an error function.</p>
 
-<p>Instead of computing each sensor value and referencing a lookup table, I decided to treat each sensor value as a **force** on a seesaw. Then, simply let the displacement be the net torque on it! Of course, if the robot is completely off the line, then just reference the magnitude of the previous displacement to know whether you are too left, or too right.</p>
+<p>Instead of computing each sensor value and referencing a lookup table, I decided to treat each sensor value as a <i>force</i> on a seesaw. Then, simply let the displacement be the net torque on it! Of course, if the robot is completely off the line, then just reference the magnitude of the previous displacement to know whether you are too left, or too right.</p>
 
 <p>That’s basically what I’m doing here — writing it in code is much simpler than doing it mathematically though. The key part is the 
 
 <div class="centered-image">
-  <p>\( \sum (S[n]N[n]/S[n]) \)</p>
+  <p>\[ \sum \frac{S[n]N[n]}{S[n]} \]</p>
 </div>
 
  which is simply the average. N is the location of each sensor and S is the associated sensor values.</p>
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/image/sc3.png" alt="Screenshot 2024-01-22 at 4.03.32 PM.png">
+  <p>\[ \text{out} = K_p e(t) + K_i \int e(t) \, dt + K_d \cdot \text{lowpass} \left( \frac{d}{dt} e(t) \right) \]</p>
 </div>
 
 <p>You can find the <a href="https://www.desmos.com/calculator/4zlgnq8wji">Desmos here</a>, and play around with the ϕ, which is the displacement of the sensor array off the line. The purple line represents the error function value, and the dots are the sensor locations</p>
