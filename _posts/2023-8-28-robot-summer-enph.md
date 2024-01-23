@@ -211,7 +211,7 @@ details[open] summary {
 <p>The final “non-traditional” part Ebi and I implemented was **filtering** the derivative of our error function, so that the PID equation is out = Kpe(t)+Ki∫e(t)+Kdlowpass(ddte(t))out=Kp​e(t)+Ki​∫e(t)+Kd​lowpass(dtd​e(t))﻿. To understand why, consider the following error function e(t), in red:</p>
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/sc4.png" alt="Screenshot 2024-01-22 at 4.05.56 PM.png">
+  <img src="{{ site.baseurl }}/assets/image/sc4.png" alt="Screenshot 2024-01-22 at 4.05.56 PM.png">
 </div>
 
 <p>This error function simply means the robot’s displacement off the line has changed. It looks like a step rather than a smooth change because these signals are being processed inside the microcontroller, in thee **discrete* time domain.</p>
@@ -219,7 +219,7 @@ details[open] summary {
 <p>If we then compute the almost-discrete-derivative as error - prevErrorerror﻿, we’d get an impulse, as shown in blue. This isn’t that useful because it means the derivative term in the PID equation only lasts for one loop iteration, which is on the order of μμ﻿s — that’s not nearly enough time for it to do much useful work. A solution to this is to **low-pass filter (LPF)** the differentiated error signal, shown in green. In an electrical context, this green signal represents the discharging of a capacitor, but instead we’re doing it in software using a first-order IIR filter:</p>
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/sc5.png" alt="Screenshot 2024-01-22 at 4.07.27 PM.png">
+  <img src="{{ site.baseurl }}/assets/image/sc5.png" alt="Screenshot 2024-01-22 at 4.07.27 PM.png">
 </div>
 
 <p>Of course there are other ways to do this, and I guess you could choose any decaying function (maybe an average?). All that I’m trying to do is keep the effect of the derivative for longer, so that the KdKd​﻿ term comes into play.</p>
@@ -233,11 +233,11 @@ details[open] summary {
 <p>I’m really proud of the pace we were able to do this at, since we were the first team to get on the track and tape follow in the first week of the course.</p>
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/topOfOG.jpeg" alt="topOfOG.jpeg">
-    <img src="{{ site.baseurl }}/assets/finalrunOGgif.gif" alt="finalrunOGgif.gif">
+  <img src="{{ site.baseurl }}/assets/image/topOfOG.jpeg" alt="topOfOG.jpeg">
+    <img src="{{ site.baseurl }}/assets/image/finalrunOGgif.gif" alt="finalrunOGgif.gif">
 </div>
 
-<p>We fail on rainbow road since this was our first time testing, and the colors interfered with the tape sensor, but we all start somewhere!</p>
+<p>We fail on rainbow road since this was our first time testing, and the colors interfered with the tape sensor</p>
 
 <strong>Block Pickup:</strong>
   
