@@ -256,8 +256,10 @@ To understand why, consider the following error function e(t), in red:</p>
 
 <details>
   <summary>Final Build</summary>
-  
-  Final Build
+  Here is a demonstration of a ~16 second lap, our final design:
+  <div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/final16lapgiffy.gif" alt="Ack vs Diff Steering">
+</div> 
   
 </details>
 
