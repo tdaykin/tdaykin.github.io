@@ -131,7 +131,119 @@ details[open] summary {
 <details>
   <summary>Construction + Redesign + Maybe a whole new idea</summary>
   
-  Construction + Redesign + Maybe a whole new idea
+  # Electronics:
+
+To start we built a simple line follower, something we could adjust later on. Ebi owned build the motor drivers, tape sensors and microcontroller boards. 
+
+## 1. H-Bridge Motor Drivers:
+
+The H-Bridge is a relatively simple circuit used to control the **polarity** of the voltage across a load, in our case, a motor. Alongside having control over the speed by PWM, the H-bridge gives us control over the motor’s rotation direction. This is especially important in differential-steering, where in some cases one wheel must spin backward and the other forward to complete a sharp turn. Here is a simple **dual H-bridge** schematic of the motor boards on the robot.
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/dual-hbridge.png" alt="dual-hbridge.png1">
+</div> 
+
+Attached is a step through guide made by Ebi: ![[H-Bridge Step-Through.pdf]]
+
+This resulted in: 
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/H-bridge layout.jpeg" alt="H-bridge layout.jpeg">
+  <img src="{{ site.baseurl }}/assets/image/H-bridge final.png" alt="H-bridge final.png">
+  <img src="{{ site.baseurl }}/assets/image/initialpresentation2534.png" alt="Initial CAD pic 4">
+</div>
+
+## 2. Control Boards and Tape Following Sensors:
+Here’s the unpopulated Blue-Pill/microcontroller board, and the tape sensor board:
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/Screenshot 2024-01-22 at 3.50.09 PM.png" alt="Screenshot 2024-01-22 at 3.50.09 PM.png">
+</div>
+
+BP Board PCB Layout:
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/Screenshot 2024-01-22 at 3.51.03 PM.png" alt="Screenshot 2024-01-22 at 3.51.03 PM.png">
+</div>
+
+This is somewhat overkill and wasn’t really required in the end, but I designed this board pretty early on before any other sensor / peripheral decisions were made. So it just made sense to be safe and provide the possibility to house two microcontrollers. It has:
+
+-  x3 SONAR ports
+
+- x4 I2C ports (two of them tied together ___if___ the microcontrollers need to talk to each other)
+
+- x6 AIO available for tape sensors,
+
+- x3 servo ports
+
+- a UART port for serial monitor, power selection
+
+- 2 2-wide PWM ports for two H-Bridges
+
+- voltage level selectors for I2C, Sonar, and Tape Sensors
+
+and leaves the remainder of the pins free for switches, LEDS, hall-sensors, and anything else.
+
+For the tape-sensor board, Dhruv made the schematic and Ebi made the PCB layout and soldered it together. It uses surface-mount resistors which was needed since the tape sensors sit very low to the ground. Here’s a video of it on a servo mount which I made:
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/servermount.gif" alt="servermount.gif">
+</div>
+
+## 3. PID Algorithm:
+
+The PID is probably the simplest part of code of the entire robot, but I wanted to share how I thought about converting tape-sensor data to an error function.
+
+Instead of computing each sensor value and referencing a lookup table, I decided to treat each sensor value as a **force** on a seesaw. Then, simply let the displacement be the net torque on it! Of course, if the robot is completely off the line, then just reference the magnitude of the previous displacement to know whether you are too left, or too right.
+
+That’s basically what I’m doing here — writing it in code is much simpler than doing it mathematically though. The key part is the (∑S[n]N[n]∑S[n]∑S[n]∑S[n]N[n] - fix latex)​﻿ which is simply the average. N is the location of each sensor and S is the associated sensor values.
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/Screenshot 2024-01-22 at 4.03.32 PM.png" alt="Screenshot 2024-01-22 at 4.03.32 PM.png">
+</div>
+
+You can find the [Desmos here](https://www.desmos.com/calculator/4zlgnq8wji), and play around with the ϕϕ﻿, which is the displacement of the sensor array off the line. The purple line represents the error function value, and the dots are the sensor locations
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/image/PIDs23.gif" alt="PIDs23.gif">
+</div>
+
+One interesting way of doing it like this is it becomes convenient to introduce nonlinearities into the transfer function through the R[n] array. Ebi and I played around with this a little and found that a non-linear transfer function for differential steering can often result in smoother and more responsive driving than a linear one.
+
+This makes intuitive sense for tape-following, because you don’t really care about minor deviations off the line, but once your tape sensors are close to leaving the line entirely, you now have a higher error to correct yourself quickly, or to take a sharp turn.
+
+The final “non-traditional” part Ebi and I implemented was **filtering** the derivative of our error function, so that the PID equation is out = Kpe(t)+Ki∫e(t)+Kdlowpass(ddte(t))out=Kp​e(t)+Ki​∫e(t)+Kd​lowpass(dtd​e(t))﻿. To understand why, consider the following error function e(t), in red:
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/Screenshot 2024-01-22 at 4.05.56 PM.png" alt="Screenshot 2024-01-22 at 4.05.56 PM.png">
+</div>
+
+This error function simply means the robot’s displacement off the line has changed. It looks like a step rather than a smooth change because these signals are being processed inside the microcontroller, in thee **discrete* time domain.
+
+If we then compute the almost-discrete-derivative as error - prevErrorerror﻿, we’d get an impulse, as shown in blue. This isn’t that useful because it means the derivative term in the PID equation only lasts for one loop iteration, which is on the order of μμ﻿s — that’s not nearly enough time for it to do much useful work. A solution to this is to **low-pass filter (LPF)** the differentiated error signal, shown in green. In an electrical context, this green signal represents the discharging of a capacitor, but instead we’re doing it in software using a first-order IIR filter:
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/Screenshot 2024-01-22 at 4.07.27 PM.png" alt="Screenshot 2024-01-22 at 4.07.27 PM.png">
+</div>
+
+Of course there are other ways to do this, and I guess you could choose any decaying function (maybe an average?). All that I’m trying to do is keep the effect of the derivative for longer, so that the KdKd​﻿ term comes into play.
+
+The motivation to try something like this is somewhat arbitrary, but we gave it a shot and it had a **significant positive impact on the smoothness of the robot’s tape following at high speeds**.
+
+## Final run:
+
+With all the basics sorted, we put the motors, H-bridges, microcontrollers, tape-sensors, and PID code together for the first prototype. Here you can see one of the populated BP boards as well.
+
+I’m really proud of the pace we were able to do this at, since we were the first team to get on the track and tape follow in the first week of the course.
+
+<div class="centered-image">
+  <img src="{{ site.baseurl }}/assets/topOfOG.jpeg" alt="topOfOG.jpeg">
+    <img src="{{ site.baseurl }}/assets/finalrunOGgif.gif" alt="finalrunOGgif.gif">
+</div>
+
+We fail on rainbow road since this was our first time testing, and the colors interfered with the tape sensor, but we all start somewhere!
+
+# Block Pickup:
   
 </details>
 
