@@ -151,7 +151,6 @@ details[open] summary {
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/H-bridge layout.jpeg" alt="H-bridge layout.jpeg">
   <img src="{{ site.baseurl }}/assets/image/H-bridge final.png" alt="H-bridge final.png">
-  <img src="{{ site.baseurl }}/assets/image/initialpresentation2534.png" alt="Initial CAD pic 4">
 </div>
 
 <strong>2. Control Boards and Tape Following Sensors:</strong>
