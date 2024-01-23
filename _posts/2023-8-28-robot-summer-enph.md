@@ -101,7 +101,7 @@ details[open] summary {
 # TIMELINE:
 
 <details>
-  <summary>Brainstorming/Designing</summary>
+  <summary>Brainstorming</summary>
 
   <strong>Brainstorming:</strong>
   <p>Teams were allowed to do almost anything they wanted, including jumping off the ramps, using the zipline, or traveling over the rocks to gain a shortcut to the finish line. However, before talking to each other as a team, we all decided that we would follow tape and dedicate our focus on trying to pick up blocks/avoid them passively.</p>
@@ -132,7 +132,7 @@ details[open] summary {
 </details>
 
 <details>
-  <summary>Construction + Redesign + Maybe a whole new idea</summary>
+  <summary>Construction</summary>
   
 <strong>Electronics:</strong>
 
@@ -230,7 +230,7 @@ To understand why, consider the following error function e(t), in red:</p>
 <p>If we then compute the almost-discrete-derivative as error - prevErrorerror﻿, we’d get an impulse, as shown in blue. This isn’t that useful because it means the derivative term in the PID equation only lasts for one loop iteration, which is on the order of μ﻿s — that’s not nearly enough time for it to do much useful work. A solution to this is to <i>low-pass filter (LPF)</i> the differentiated error signal, shown in green. In an electrical context, this green signal represents the discharging of a capacitor, but instead we’re doing it in software using a first-order IIR filter:</p>
 
 <div class="centered-image">
-  <img src="{{ site.baseurl }}/assets/image/sc5.png" alt="Screenshot 2024-01-22 at 4.07.27 PM.png">
+  <p>\[ \text{LPF}\left( \frac{d}{dt} e(t) \right) = y(t) = k \cdot y(t - 1) + (1 - k) \left[ e(t) - e(t - 1) \right], \quad k \in (0, 1) \]</p>
 </div>
 
 <p>Of course there are other ways to do this, and I guess you could choose any decaying function (maybe an average?). All that I’m trying to do is keep the effect of the derivative for longer, so that the KdKd​﻿ term comes into play.</p>
