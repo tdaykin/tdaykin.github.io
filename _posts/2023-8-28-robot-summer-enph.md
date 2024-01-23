@@ -250,5 +250,4 @@ details[open] summary {
   
 </details>
 
-Conclusion/what we learned... work in progress
 UBC EngPhys Robot Summer 2023
