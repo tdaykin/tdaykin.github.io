@@ -234,7 +234,7 @@ details[open] summary {
 
 <div class="centered-image">
   <img src="{{ site.baseurl }}/assets/image/topOfOG.jpeg" alt="topOfOG.jpeg">
-    <img src="{{ site.baseurl }}/assets/image/finalrunOGgif.gif" alt="finalrunOGgif.gif">
+    <img src="{{ site.baseurl }}/assets/image/finalrunOG.gif" alt="finalrunOGgif.gif">
 </div>
 
 <p>We fail on rainbow road since this was our first time testing, and the colors interfered with the tape sensor</p>
