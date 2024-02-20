@@ -11,14 +11,14 @@ permalink: /about
 
 ## Profile:
 
-My goal is to be a part of the innovative technology scene. In my recent role at a leading global fuel cell company, I took the initiative and pursued a variety of projects, from liquid injection molding to particle analysis. From there, I honed my ability to lead in an ambitious environment while emphasizing my accountability and meaningful contributions.
+My goal is to be a part of the innovative technology scene, leveraging my creativity and deeply rooted math and physics background to drive positive changes. During my recent role at a leading global fuel cell company, I worked in a multidisciplinary team and pursued many projects, from liquid injection molding to particle analysis. In this role, I learned to take initiative and lead in ambitious environments while consistently emphasizing my accountability and meaningful contributions.
 
 ## Education:
 
 ### 3rd Year UBC Engineering Physics, BASc
 **University Of British Columbia** - Vancouver, B.C., Canada  
 *Sept. 2021 -- Present*  
-- Engineering Physics is the bridge between Engineering and Science combining advanced concepts in math and physics while putting them to practical use in team-based projects
+- Engineering Physics is the bridge between Engineering and Science combining advanced concepts in math and physics while putting them to practical use in team-based projects.
 - Key Courses: software construction, signal processing, mechanics and instrument design
 
 ## Technical Experience:
@@ -26,50 +26,44 @@ My goal is to be a part of the innovative technology scene. In my recent role at
 ### MEA Process Engineer Co-op, Advanced Manufacturing
 **Ballard Power Systems** - Burnaby, B.C., Canada  
 *Jan. 2023 -- April. 2023*  
-- Applied a structured approach to qualify an upcoming Liquid Injection Molding process; involving data collection, capability/GR&R analysis, and ultimately, a presentation of results in a lean six sigma environment
-- Hands-on experience in operating Liquid Injection Molding machines including troubleshooting and control over molding parameters
-- Developed and implemented automated data analysis in excel, transforming raw data into actionable insights; increasing overall efficiency by 98%
-- Accelerated production times by 75% through rapid prototyping of 3D printed fixtures designed in CREO
+- Applied a structured approach to qualify an automated robotic Liquid Injection Molding process involving data collection, capability/GR\&R analysis, and ultimately, a presentation of results in a lean Six Sigma environment.
+- Hands-on experience in operating Liquid Injection Molding machines including troubleshooting and control over molding parameters.
+- Developed and implemented automated data analysis in excel, transforming raw data into actionable insights; increasing overall efficiency by 98%.
+- Accelerated production times by 75\% through a combination of rapid prototyping 3D printed fixtures designed in Creo and updates to vision measurement system routines in C++.
 - In-depth knowledge on the manufacturing and development of fuel cells
 
 ## Technical Projects:
 
 ### Autonomous Driving Robot Competition: 2nd Place
 **Technologies:** CAD, Machine Shop, C++  
-- Brainstormed, designed, and manufactured an autonomous robot with a group of 4 to race on the same track as other robots all while passively picking up and avoiding certain objects
-- Created the entire chassis, ensuring all sensors, circuits and mechanical components function as intended, quickly prototyping drawings into reality by using 3D printers and laser/waterjet cutters
-- Implemented and tuned a PID algorithm in C++ so the robot can follow tape smoothly through custom-made tape sensors controlled by an STM-32 Blue Pill
+- Brainstormed, designed, and manufactured an autonomous robot with a group of 4 to race on the same track as other robots while passively picking up and avoiding objects.
+- Created the entire chassis, ensuring all sensors, circuits and mechanical components function as intended, quickly prototyping drawings into reality by using 3D printers and laser/waterjet cutters.
+- Implemented and tuned a PID algorithm in C++ so the robot can follow tape smoothly through custom-made tape sensors controlled by an STM-32 Blue Pill.
 
 ### Nand2Tetris: Project Course
 **Technologies:** HDL, Gate logics, Git  
-- Designed digital logic circuits using Hardware Description Language (HDL), combining various logic gates and sequentially developing larger components of a modified computer system
-- Developed an understanding of computer architecture by building a modified computer system from the NAND gate up; learning knowledge of CPU architecture, ALU design, and memory systems
+- Designed digital logic circuits using Hardware Description Language (HDL), combining various logic gates and sequentially developing larger components of a modified computer system.
+- Developed an understanding of computer architecture by building a modified computer system from the NAND gate up; learning knowledge of CPU architecture, ALU design, and memory systems.
 
 ### Canadian Synthetic Biology Education Research Group, SYNB3
 **Technologies:** Python: scikit-learn, NumPy, pandas  
-- Assisted in the identification of a cannabinoid that has a high affinity for the human CB1 receptor through simulation together in python and PyMOL
-- Visualized protein similarities through hallucinations using python, PyMol and knowledge in organic chemistry
-- Produced a technical outline with a multidisciplinary team across Canada that organized and summarized biological findings to satisfy real world demands for potential companies to explore
+- Assisted in the identification of a cannabinoid that has a high affinity for the human CB1 receptor.
+- Modeled protein similarities through hallucinations using Python, PyMol, and knowledge of organic chemistry.
+- Produced a technical outline with a multidisciplinary team across Canada that organized our results to satisfy real-world demands for potential companies to explore.
 
 ### Multidisciplinary Undergraduate Research Competition
 **Technologies:** R, Statistical Methods: Hypothesis Testing  
-- Analyzed and statistically compared market data of air purifiers using R in order to lower costs and increase efficiency and safety of incoming products for COVID-19
+- Analyzed and statistically compared market data of air purifiers using R to lower costs and increase the efficiency and safety of incoming products for COVID-19.
 - Interpreted how ultraviolet air purifying works, specifically with TiO<sub>2</sub> together with multi-walled carbon nanotubes, which reduce the harmful effects of UV radiation
-- Transformed our findings into digestible content by using python and matplotlib to be shared in a conference
+- Transformed our findings into digestible content by using Python and Matplotlib to be shared in a conference.
 
 ## Technical Skills:
 
-- **Languages:** Python, Java, C/C++, R, MATLAB, LaTeX
-- **Developer Tools:** Visual Studio, IntelliJ, Git
-- **Libraries:** pandas, NumPy, matplotlib, scikit-learn
+- **Prototyping Tools:** 3D printing, laser/waterjet cutting, SolidWorks, OnShape, oscilloscopes, soldering
+- **Languages/Systems:** Python,  C/C++, Java, Matlab, R, Linux, ROS
+- **Libraries:** Pandas, NumPy, Matplotlib, OpenCV
 
 ## Community Engagement:
-
-### Undergraduate Research
-**Advisor: Arman Hejazi, UBC Department of Chemical and Biological Engineering** - Vancouver B.C.  
-*Sept. 2021 -- Aug. 2022*  
-- Published an abstract with our findings
-- Advanced my knowledge in research by understanding how to read/write technical documents and give presentations to a variety of audiences
 
 ### Engineering Physics Mentor
 **University of British Columbia** - Vancouver, B.C.  
@@ -81,9 +75,10 @@ My goal is to be a part of the innovative technology scene. In my recent role at
 
 ### Multidisciplinary Undergraduate Research Competition (MURC)
 **University of British Columbia** - Vancouver, B.C.  
-*March 2020*  
+*March 2022*  
 
-- Lead a multidisciplinary team as we discovered innovations in air purification which evolved into authoring an abstract and representing our findings in a non-technical presentation
+- Authored an abstract and represented our findings in a non-technical presentation.
 
-Daykin, T. D., Holzman, I. M., & Chin, S. (2022). *Development of a UV-LED based air purification system: A research study*. Undergraduate Research in Natural and Clinical Science and Technology (URNCST) Journal, 6(4), A29–A29. [https://doi.org/10.26685/urncst.375](https://doi.org/10.26685/urncst.375)
+> Daykin, T. D., Holzman, I. M., & Chin, S. (2022). *Development of a UV-LED based air purification system: A research study*. Undergraduate Research in Natural and Clinical Science and Technology (URNCST) Journal, 6(4), A29–A29. [https://doi.org/10.26685/urncst.375](https://doi.org/10.26685/urncst.375)
+
 
