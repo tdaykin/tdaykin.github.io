@@ -29,7 +29,7 @@ My goal is to be a part of the innovative technology scene, leveraging my creati
 - Applied a structured approach to qualify an automated robotic Liquid Injection Molding process involving data collection, capability/GR\&R analysis, and ultimately, a presentation of results in a lean Six Sigma environment.
 - Hands-on experience in operating Liquid Injection Molding machines including troubleshooting and control over molding parameters.
 - Developed and implemented automated data analysis in excel, transforming raw data into actionable insights; increasing overall efficiency by 98%.
-- Accelerated production times by 75\% through a combination of rapid prototyping 3D printed fixtures designed in Creo and updates to vision measurement system routines in C++.
+- Accelerated production times by 75% through a combination of rapid prototyping 3D printed fixtures designed in Creo and updates to vision measurement system routines in C++.
 - In-depth knowledge on the manufacturing and development of fuel cells
 
 ## Technical Projects:
@@ -82,5 +82,10 @@ My goal is to be a part of the innovative technology scene, leveraging my creati
 <div style="margin-left: 20px; text-indent: -20px;">
   Daykin, T. D., Holzman, I. M., & Chin, S. (2022). <em>Development of a UV-LED based air purification system: A research study</em>. Undergraduate Research in Natural and Clinical Science and Technology (URNCST) Journal, 6(4), A29–A29. <a href="https://doi.org/10.26685/urncst.375">https://doi.org/10.26685/urncst.375</a>
 </div>
+
+
+
+
+
 
 
