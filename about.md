@@ -68,8 +68,7 @@ My goal is to be a part of the innovative technology scene, leveraging my creati
 ### Engineering Physics Mentor
 **University of British Columbia** - Vancouver, B.C.  
 *Sept. 2023 -- Present*
-- Guided 5 first-year students in Engineering Physics, providing academic support and career advice
-- Developed strong leadership and teaching skills through this role
+- Guided 5 first-year students in Engineering Physics, providing academic support and career advice.
 
 ## Publications and Conferences:
 
