@@ -36,8 +36,8 @@ navigation_links:
   - title: Resume
     url: /about
 
-  - title: Search
-    url: /search
+  # - title: Search
+  #   url: /search
 
 # Footer icons
 footer_links:
