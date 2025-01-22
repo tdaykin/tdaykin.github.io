@@ -3,7 +3,7 @@ layout: post
 title: Image Collector - Offical Obsidian Plugin
 categories: [ENPH]
 <!--header_image: /assets/image/URNSTlogo.png-->
-thumbnail: /assets/image/Obsidian_plugin.png
+thumbnail: /assets/image/Obsidian_plugin2.png
 ---
 
 <style>
