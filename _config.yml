@@ -30,7 +30,7 @@ baseurl: ""
 
 # Navigation menu
 navigation_links:
-  - title: Activities
+  - title: Projects
     url: /
 
   - title: Resume
