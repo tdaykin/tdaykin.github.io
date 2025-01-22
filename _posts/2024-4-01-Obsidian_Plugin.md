@@ -22,4 +22,5 @@ thumbnail: /assets/image/Obsidian_plugin.png
 
 <!--more-->
 
-*Work in progress, but link to repo:* `https://github.com/tdaykin/obsidian_image_collector`
+[Work in progress, but link to repo](https://github.com/tdaykin/obsidian_image_collector)
+
