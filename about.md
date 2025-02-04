@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CV - 2024
+title: Resume - 2025
 permalink: /about
 ---
 
@@ -11,7 +11,7 @@ permalink: /about
 
 ## Profile:
 
-My goal is to be a part of the innovative technology scene, leveraging my creativity and deeply rooted math and physics background to drive positive changes. During my recent role at a leading global fuel cell company, I worked in a multidisciplinary team and pursued many projects, from liquid injection molding to particle analysis. In this role, I learned to take initiative and lead in ambitious environments while consistently emphasizing my accountability and meaningful contributions.
+I have one year of engineering industry experience working with electromechanical systems, mechanical design, and root casue analysis for biomedical and manufacturing applications. With those skills, I have created user-facing parts for large CAD assemblies with technical drawings, in-house testing applications, and jigs. Recently, I created an official plugin for the note-taking app Obsidian called [*Image Collector*](https://github.com/tdaykin/obsidian_image_collector), which now has over over 2K+ downloads. In school, my team and I are working on our capstone project, developing an edge AI chip for low-latency inference.
 
 ## Education:
 
