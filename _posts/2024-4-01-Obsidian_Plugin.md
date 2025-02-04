@@ -22,7 +22,7 @@ thumbnail: /assets/image/Obsidian_plugin2.png
 
 <!--more-->
 
-I normally write this posts in the note taking app called Obsidian [link](https://obsidian.md). It is similar to Notion; however, everything is local, which is nice. In this app all of your images get put into a ``images`` directory, which is convenient, but if you want to extract the images from a particular note, you have to dig through that folder for them. My plugin simpifies, if you need the images from your folder you can just click on my plugin to collect them, then only the images for that note are collected into a new folder for easy access. Here is the link to my [repo](https://github.com/tdaykin/obsidian_image_collector). Below is a demonstration: 
+I normally write this posts in the note taking app called Obsidian [(link)](https://obsidian.md). It is similar to Notion; however, everything is local, which is nice. In this app all of your images get put into a ``images`` directory, which is convenient, but if you want to extract the images from a particular note, you have to dig through that folder for them. My plugin simpifies, if you need the images from your folder you can just click on my plugin to collect them, then only the images for that note are collected into a new folder for easy access. Here is the link to my [repo](https://github.com/tdaykin/obsidian_image_collector). Below is a demonstration: 
 
 ## How to use:
 
