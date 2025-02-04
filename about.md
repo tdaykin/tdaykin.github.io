@@ -28,7 +28,6 @@ I have one year of engineering industry experience working with electromechanica
 - **Libraries/Frameworks:** Onnx, PyTorch, OpenCV, ROS, NumPy, Pandas, PySide6.
 
 ## Technical Experience:
-
 ### Instrumentation Engineer Co-op
 **Cytiva** - Vancouver, B.C., Canada  
 *May 2024 -- Dec. 2024*  
