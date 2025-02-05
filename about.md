@@ -13,7 +13,7 @@ permalink: /about
 
 ## Profile:
 
-I have one year of engineering industry experience working with electromechanical systems, mechanical design, and root casue analysis for biomedical and manufacturing applications. With those skills, I have created user-facing parts for large CAD assemblies with technical drawings, in-house testing applications, and jigs. Recently, I created an official plugin for the note-taking app Obsidian called [*Image Collector*](https://github.com/tdaykin/obsidian_image_collector), which now has over 2K+ downloads. In school, my team and I are working on our capstone project, developing an edge AI chip for low-latency inference.
+I have one year of engineering industry experience working with electromechanical systems, mechanical design, and root cause analysis for biomedical and manufacturing applications. With those skills, I have created user-facing parts for large CAD assemblies with technical drawings, in-house testing applications, and jigs. Recently, I created an official plugin for the note-taking app Obsidian called [*Image Collector*](https://github.com/tdaykin/obsidian_image_collector), which now has over 2K+ downloads. In school, my team and I are working on our capstone project, developing an edge AI chip for low-latency inference.
 
 ## Education:
 
