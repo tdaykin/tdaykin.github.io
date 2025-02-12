@@ -4,7 +4,7 @@ title: Resume - 2025
 permalink: /about
 ---
 
-<a href="/assets/trevordaykin_resume.pdf" target="_blank" download>Download Resume</a>
+<a href="/assets/trevordaykin_webresume.pdf" target="_blank" download>Download Resume</a>
 
 **Email:** [trevorddaykin@gmail.com](mailto:trevorddaykin@gmail.com)  
 **LinkedIn:** [linkedin.com/in/trevordaykin](https://linkedin.com/in/trevordaykin)
